@@ -2,7 +2,7 @@
 
 A complete guide to FAIR data and services. 
 
-[Available here](https://dualslash.github.io/The-FAIR-Handbook/intro.html), automatically built from this source.
+[Available here](https://dualslash.github.io/The-FAIR-Handbook/intro.html), automatically built from this source using [Github workflow](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions).
 
 ## Usage
 

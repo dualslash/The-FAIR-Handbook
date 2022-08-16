@@ -1,6 +1,8 @@
 # The FAIR Handbook
 
-A complete guide to FAIR data and services
+A complete guide to FAIR data and services. 
+
+[Available here](https://dualslash.github.io/The-FAIR-Handbook/intro.html), automatically built from this source.
 
 ## Usage
 

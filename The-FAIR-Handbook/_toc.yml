@@ -1,0 +1,26 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: FAIR Principles
+    chapters:
+    - file: findable
+      sections:
+        - file: f1
+        - file: f2
+        - file: f3
+        - file: f4
+    - file: accessible
+    - file: interoperable
+    - file: reusable
+  - caption: FAIR Data Points
+    chapters:
+    - file: z1
+  - caption: Data Sharing Strategies
+    chapters:
+    - file: z2
+  - caption: Advanced Techniques
+    chapters:
+    - file: z3

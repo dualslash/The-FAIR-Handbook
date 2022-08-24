@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Data minimization &#8212; The FAIR Handbook</title>
+    <title>Algorithmic PETs &#8212; The FAIR Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Introduction" href="z3.html" />
+    <link rel="prev" title="Data minimization" href="pet1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -196,15 +196,27 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="z3.html">
    Introduction
   </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Data minimization
-  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="pet1.html">
+     Data minimization
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Algorithmic PETs
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -296,7 +308,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/dualslash/The-FAIR-Handbook/issues/new?title=Issue%20on%20page%20%2FData minimization.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/dualslash/The-FAIR-Handbook/issues/new?title=Issue%20on%20page%20%2Fpet2.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -324,7 +336,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/Data minimization.md"
+        <a href="_sources/pet2.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -373,7 +385,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Data minimization</h1>
+                <h1>Algorithmic PETs</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -385,12 +397,19 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="data-minimization">
-<h1>Data minimization<a class="headerlink" href="#data-minimization" title="Permalink to this headline">#</a></h1>
-<p>The aim of this branch of PETs is to minimize or obscure the data so that it becomes impossible toto mitigate the risk of reidentify reidentifying to the personal levelthe subjects. Traditionally this was done by removal of data expected to reveal a subject’s identity. For example, by removing names, addresses or other attributes that could be used to retrace ones identity, privacy was thought to be safeguarded. The problem with large sets of data that it is not sufficient to merely remove the obvious personal data. Research has demonstrated that one can often find unique combinations of attributes that can reidentify individuals making up the data. Therefore, more recent developments in data minimalization have been aimed at removing the link between an individual’s identity and their record in the data by first finding these unique combinations of attributes and then blurring or destroying them.
-A subtype of minimalization is pseudo-anonymization. Pseudonymization is defined within the GDPR as “the processing of personal data in such a way that the data can no longer be attributed to a specific data subject without the use of additional information, as long as such additional information is kept separately and subject to technical and organizational measures to ensure non-attribution to an identified or identifiable individual”.</p>
-<p>In a data ecosystem, the first step then would be to predict those combinations of attributes after which one removes or suppresses these from the data. After this is done, one can share the data safely with other members of the ecosystem. Methods of determining if one obtained privacy in a given datasets can be found using measures such as k-anonymity, l-diversity and t-closeness .</p>
-<p>K-anonymity gained large scale media attention when in 2018 it was used by Junade Ali to create a protocol based on hashing used to anonymously verify if a password was leaked in any large scale database breaches . Implementations of k-anonymity are provided by commercial parties such as Google  and Privitar  among others.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="algorithmic-pets">
+<h1>Algorithmic PETs<a class="headerlink" href="#algorithmic-pets" title="Permalink to this headline">#</a></h1>
+<p>Algorithmic PETs rely on altercating of the representation of the data to secure privacy while retaining the information necessary for adequate utility. Four techniques will be touched upon; differential privacy, homomorphic encryption, zero-knowledge proofs and aggregation of the data.
+Differential privacy (DP) defines privacy as the inability for an adversary to tell whether an individual is part of the dataset or not, give complete knowledge of the individual’s data and all other records in the dataset. DP ensures this by obscuring the data in such a way that the inclusion or exclusion of one individual’s record makes no statistical difference one the output . This is achieved by adding noise which can be generated by transformation of the data (for example Laplacian or neighbor distance) or manipulation. The model for generating noise is known to the maintainer of the data and can therefore be included in subsequent analyses or machine learning applications. This allows for the ‘deciphering’ of the noisy data to maintain high utility. DP is thus a reversible PET. With the right key, one can convert back to the sensitive data.
+DP is a robust set of PET and measures to determine its success are well defined (epsilon-differential privacy). Implementations are widely available. Google  has C++, Go and Java algorithms, Microsoft has open-sourced a Rust-based library with Python bindings called SmartNoise  and there is the OpenDP  community boasting an impressive array of free implementations and documentation for enterprise use of DP.</p>
+<p>DP is not without serious drawbacks for the use in a health data ecosystem. The main problem lies in it’s inability to handle outliers in the data. These are often meaningful, both clinically and financially, in healthcare settings. Additionally, as with minimalization, linking a single subject over datasets is impossible without some compromise to privacy. Finally, it has trouble with time series data and cannot handle some of the state-of-the-art in machine learning models. This makes it a hard-to-implement PET for a well-functioning data ecosystem.</p>
+<p>A second type of algorithmic PET is Homomorphic Encryption (HE). General encryption is a proven and successful method to increase the security and privacy protection of a dataset. However, when one needs to decrypt the data to analyze it, the data becomes sensitive once more. HE aims to solve this by enabling computational analysis of encrypted data. It can be typically used when one wants to outsource computational tasks to a third party where the data to be send it sensitive in nature. Under HE, the encrypted data is sent to a third party, which runs a model on the encrypted data. Once the model is finished, the encrypted results are sent back to the original data owner who can decrypt the results with the relevant private key.</p>
+<p>There are two core features of HE. First feature consist of semantic security. An adversary will be unable to distinguish whether a piece of ciphertext is the encrypted version out of a collection of different plaintexts. The second feature is concerned with one-wayness. In the case of an electronic health record, an adversary cannot link a piece of ciphertext to the corresponding plaintext based solely on the public key of a patient held by a data owner (used to link a patient to their health record).
+HE has been demonstrated in health data research to have been a secure option to train deep learning models without having the model owner see the original data or the model parameters. MORE (Matrix Operation for Randomization or Encryption) is an full HE implementation (FHE) that allows a third party to train models on the sensitive data without compromising privacy or utility .
+The main downside of any full HE scheme is the overhead posed on the system. It requires vast amounts of memory and processing power to enable the training machine learning models. Alternatively, one could alleviate some of the stringent requirements to gain processing speed. However, this results in compromising the privacy of the data. Another downside is the network aspect. FHE is suited for a third party analyzing the data when time is not of the essence (outsourced analytics). However, when an ecosystem is the goal, insight of data and subsequent models need to be transferred over multiple parties. For example, three parties can have data they want to pool and analyze together, while protecting the sensitive nature of their data. FHE is less suited for this type interaction between several parties. Another branch PETs, called secure Multiparty computation (MPC), remedies this by enabling joint computation in an encrypted space, building on the FHE principles. More on MPC can be found below.
+A third method of algorithmic PETs is aimed at giving a legitimate actor access to data that it is allowed to use. These Zero-Knowledge Proofs (ZKP) are aimed at verifying the digital identity and data of an actor without explicitly sharing the data itself. According to Preuveneers &amp; Joosen (2016) : “A ZKP enables the prover to make sure the verifier is certain some statements are correct, but the verifier does not learn anything except the validity of the statement.” An example would be the COVID-19 vaccine passport used in the EU. By scanning a QR-code, anybody could inquire if the person in front of them was indeed vaccinated, while obtaining a small portion of personal data to verify if the user is who they say they are (birthdate).
+ZKP are a relatively young branch of PETs but already demonstrates promising results for large scale communication between devices in health data ecosystems, such Internet of Things networks between medical sensors or sharing reports between several care providers (e.g.: hospitals and GPs). The main challenge in ZKP lies in its reliance on the data quality of the underlying data, which cannot be verified by other members in the ecosystem. Additionally, lack of machine learning applications make it limited to simple data exchanges, thus limiting its potential for SME ecosystems developing services employing any automated learning or other analytical operations on the data
+The fourth method of algorithmic PET is aggregation of data. By providing summary statistics such as means, medians or correlations, meaningful properties of data can be extracted and shared while masking the unique values of the subjects making up the data. Aggregation of data is often used by public bodies and institutions such as Statistics Netherlands (CBS) to share data publicly. Aggregation, just as minimalization, are irreversible. Once the sensitive data has been removed, it cannot be retrieved again. As with the methods described under minimalization, utility of the data is greatly reduced by this way and therefore this PET is of limited use for a data ecosystem.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -420,11 +439,11 @@ A subtype of minimalization is pseudo-anonymization. Pseudonymization is defined
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="z3.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="pet1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Introduction</p>
+            <p class="prev-next-title">Data minimization</p>
         </div>
     </a>
 </div>

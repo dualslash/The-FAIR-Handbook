@@ -25,7 +25,6 @@ parts:
     chapters:
     - file: z3
       sections:
-        - file: 
         - file: pet1
         - file: pet2
         - file: pet3

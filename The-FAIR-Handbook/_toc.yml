@@ -21,6 +21,6 @@ parts:
   - caption: Data Sharing Strategies
     chapters:
     - file: z2
-  - caption: Advanced Techniques
+  - caption: Privacy enhancing  Techniques
     chapters:
     - file: z3

@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; The FAIR Handbook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Architectural PETs &#8212; The FAIR Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -49,8 +50,9 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="index" title="Index" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Algorithmic PETs" href="pet2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -193,17 +195,17 @@ const thebe_selector_output = ".output, .cell_output"
   Privacy enhancing  Techniques
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="z3.html">
    Introduction
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="pet1.html">
      Data minimization
@@ -214,8 +216,8 @@ const thebe_selector_output = ".output, .cell_output"
      Algorithmic PETs
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="pet3.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Architectural PETs
     </a>
    </li>
@@ -311,7 +313,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/dualslash/The-FAIR-Handbook/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/dualslash/The-FAIR-Handbook/issues/new?title=Issue%20on%20page%20%2Fpet3.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -331,6 +333,52 @@ title="Open an issue"
   </div>
 </div>
 
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/pet3.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
     </div>
 </div>
 
@@ -342,7 +390,7 @@ title="Open an issue"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1></h1>
+                <h1>Architectural PETs</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -354,13 +402,39 @@ title="Open an issue"
                 
               <div>
                 
+  <section class="tex2jax_ignore mathjax_ignore" id="architectural-pets">
+<h1>Architectural PETs<a class="headerlink" href="#architectural-pets" title="Permalink to this headline">#</a></h1>
+<p>Another branch of PETs is directly aimed at creating an infrastructure of actors that aim to utilize the value of the combination of their respective data. Two types of architectural PETs will be discussed here: Federated Learning (FL) and Secure Multiparty Computation (MPC). Both are PETs aimed at generating machine learning models. Although some of the architecture of their implementation can be relatively similar, they are distinct, and each has its own strengths and weaknesses that dictate the appropriate application for each.</p>
+<p>Figure XX. Federated Learning
+Federated Learning can be most simply thought of as model sharing. By sending models to the various data sources, we can train and update machine learning models without having to ever communicate the raw, private data. This communication of the models however does require a central authority (a server) to actually send the models, as well as aggregate the results after the model update steps.
+FL has a number of advantages for a health data ecosystem. In the simplest implementations (Horizontal FL: where data is split on records), communication is only required to and from the central authority. Other, more complex implementations of FL exist, that allow for models to be trained on vertically partitioned data (data split on column features). There are a number of public libraries available for implementation in a wide range of languages  . This make FL relatively simple to use.
+An additional advantage is the low communication overhead compared to other distributed privacy preserving techniques, as the only communication that is required is directly from and to the central authority, communication overhead is significantly lower than computational overhead for all but the most simple models.
+In addition, FL has a straightforward governance structure. Due to the requirement of a central authority (server) that must be trusted, data access rules and logging are trivial to implement.
+FL works with most machine learning models. Although there are types of machine learning models that are not suitable for training from a ‘warm start’ (i.e., models that can only be trained completely all at once), FL is suitable for essentially all other models.
+Federated Learning also has some drawbacks. For starters, it is not completely trustless. A trusted central authority (server) is required to send and aggregate models. It is also susceptible to sophisticated malicious actors. Adversarial actors are capable of creating sophisticated attacks that can compromise the global model, and may be extremely difficult and computationally expensive to detect . Models often require additional privacy preserving algorithm. Malicious actors can abuse model updates to learn about specific data points of others. This necessitates the addition of further privacy preserving algorithms, usually those that include noise into model updates (e.g.: differential privacy) .
+Another drawback is concerned with small datasets. Depending on specifics of application (dimensionality of data, number of records, data bias…) there is a practical limit to how small a group of datasets should be to ensure private information is not leaked during model updates.
+Finally, local bias may hamper model accuracy. Although there are techniques for dealing with bias within a federated learning implementation. There are limits to the degree of bias these algorithms can mitigate .</p>
+</section>
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
-</div>
-
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -369,6 +443,13 @@ title="Open an issue"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="pet2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Algorithmic PETs</p>
+        </div>
+    </a>
 </div>
             </footer>
         </div>

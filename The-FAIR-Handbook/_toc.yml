@@ -24,3 +24,4 @@ parts:
   - caption: Privacy enhancing  Techniques
     chapters:
     - file: z3
+    - file: Data minimization

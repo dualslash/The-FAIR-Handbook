@@ -13,15 +13,24 @@ parts:
         - file: f3
         - file: f4
     - file: accessible
+      sections:
+        - file: a1
+        - file: a2
     - file: interoperable
+      sections:
+        - file: i1
+        - file: i2
+        - file: i3
     - file: reusable
+      sections:
+        - file: r1
   - caption: FAIR Data Points
     chapters:
     - file: z1
   - caption: Data Sharing Strategies
     chapters:
     - file: z2
-  - caption: Privacy enhancing  Techniques
+  - caption: Privacy enhancing Techniques
     chapters:
     - file: z3
       sections:

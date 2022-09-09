@@ -29,7 +29,10 @@ parts:
     - file: z1
   - caption: Data Sharing Strategies
     chapters:
-    - file: z2
+    - file: dss1
+    - file: dss2
+    - file: dss3
+    - file: dss4
   - caption: Privacy enhancing Techniques
     chapters:
     - file: z3

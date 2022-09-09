@@ -4,6 +4,12 @@
 format: jb-book
 root: intro
 parts:
+  - caption: Data Sharing Strategies
+    chapters:
+    - file: dss1
+    - file: dss2
+    - file: dss3
+    - file: dss4
   - caption: FAIR Principles
     chapters:
     - file: findable
@@ -32,12 +38,6 @@ parts:
       sections:
         - file: fdp4
         - file: fdp5
-  - caption: Data Sharing Strategies
-    chapters:
-    - file: dss1
-    - file: dss2
-    - file: dss3
-    - file: dss4
   - caption: Privacy enhancing Techniques
     chapters:
     - file: z3

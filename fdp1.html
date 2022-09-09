@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Copy and Download" href="dss2.html" />
-    <link rel="prev" title="Metadata Standards" href="fdp5.html" />
+    <link rel="next" title="Building Blocks" href="fdp2.html" />
+    <link rel="prev" title="Rich Metadata" href="r1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -223,9 +223,9 @@ const thebe_selector_output = ".output, .cell_output"
   FAIR Data Points
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="fdp1.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Overview
   </a>
  </li>
@@ -262,9 +262,9 @@ const thebe_selector_output = ".output, .cell_output"
   Data Sharing Strategies
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dss1.html">
    Overview
   </a>
  </li>
@@ -405,7 +405,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/dualslash/The-FAIR-Handbook/issues/new?title=Issue%20on%20page%20%2Fdss1.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/dualslash/The-FAIR-Handbook/issues/new?title=Issue%20on%20page%20%2Ffdp1.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -433,7 +433,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/dss1.md"
+        <a href="_sources/fdp1.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -497,18 +497,24 @@ title="Print to PDF"
   <section class="tex2jax_ignore mathjax_ignore" id="overview">
 <h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h1>
 </br>
-<p>There are many different ways in which data can be exchanged, and in order to get a grip on these different techniques we formalise them as <strong>Data Sharing Strategies</strong>. In this section we will cover three techniques in particular.</p>
+<p>FAIR Data Point (sometimes abbreviated to FDP) is the cumulation of the vision of Tim Berners-Lee, the inventor of the world-wide-web, and the vision of the authors of the  <a class="reference external" href="https://doi.org/10.1038/sdata.2016.18">original paper on FAIR</a> . This describes an atomic unit, much like a server that exists on the web, which has an additional semantic layer that allows it to present and process data in a machine actionable and ultimately FAIR way.</p>
 <p align = "center">
-<img src=".\_static\img\datastrategies.png" height="299" />
+<img src=".\_static\img\fdparchitecture.jpg" height="308" />
 </br>
-<small>TNO, EFRO.</small>
+<small>Databricks.</small>
 </p>
-<p>From Copy and Download, Researcher to Data and finally Model to Data, these techniques provide increasing capacity for security, reliability and privacy while also being increasing complexity to implement.</p>
-<p>Depending on the specific needs, a balance may be struck between implementation feasibility and requirements for security, privacy and reliability. In the following pages we will describe these strategies and both their advantages and disadvantages in more detail.</p>
+<p>A FAIR Data Point ultimately stores <em>information about data sets</em>, which is the definition of <em>metadata</em>. And just like the <em>webserver</em> in the WWW in the beginning of the 1990s brought the power of publishing text to anyone, a FAIR data point aims to give anyone the power of putting their own data on the web.</p>
+<p>The system is called a <strong>FAIR</strong> data point because it takes care of a lot of the issues that need to be taken care of to make data FAIR; especially with the metadata needed for <strong>F</strong>indability and <strong>R</strong>eusability, and a uniform open way of <strong>A</strong>ccessing the data. The FAIR data point also addresses the <strong>I</strong>nteroperability of the metadata it stores, but it leaves the Interoperability aspects for the data itself to the data provider.</p>
+<p align = "center">
+<img src=".\_static\img\fairworkflow.png" height="190" />
+</br>
+<small>M-Unlock.</small>
+</p>
+<p>FAIR data points allows the creation of FAIR resources, typically in RDF format that can be easily indexed, processed and read by machines throughout the web. These resources provide details on the type and format of data stored within a FDP, but does not provide access to the actual data. The access and control is entirely determined by the data controller.</p>
 </br>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p>For more background information on data sharing, we recommend reading the article <a class="reference external" href="https://www.tno.nl/en/focus-areas/information-communication-technology/roadmaps/data-sharing/">the key to further digitisation</a> presented by TNO.</p>
+<p>For a concrete example of a FAIR data point, see the <a class="reference external" href="https://diamonds.tno.nl/fairdatapoint">Diamonds³ FDP</a> hosted by TNO.</p>
 </div>
 </section>
 
@@ -539,17 +545,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="fdp5.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="r1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Metadata Standards</p>
+            <p class="prev-next-title">Rich Metadata</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="dss2.html" title="next page">
+    <a class='right-next' id="next-link" href="fdp2.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Copy and Download</p>
+        <p class="prev-next-title">Building Blocks</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

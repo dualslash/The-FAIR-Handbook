@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Overview &#8212; The FAIR Handbook</title>
+    <title>Matching Layers &#8212; The FAIR Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Copy and Download" href="dss2.html" />
-    <link rel="prev" title="Metadata Standards" href="fdp5.html" />
+    <link rel="next" title="Metadata Standards" href="fdp5.html" />
+    <link rel="prev" title="Metadata Layer" href="fdp3.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -223,7 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
   FAIR Data Points
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="fdp1.html">
    Overview
@@ -234,18 +234,18 @@ const thebe_selector_output = ".output, .cell_output"
    Building Blocks
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="fdp3.html">
    Metadata Layer
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="fdp4.html">
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Matching Layers
     </a>
    </li>
@@ -262,9 +262,9 @@ const thebe_selector_output = ".output, .cell_output"
   Data Sharing Strategies
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dss1.html">
    Overview
   </a>
  </li>
@@ -405,7 +405,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/dualslash/The-FAIR-Handbook/issues/new?title=Issue%20on%20page%20%2Fdss1.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/dualslash/The-FAIR-Handbook/issues/new?title=Issue%20on%20page%20%2Ffdp4.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -433,7 +433,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/dss1.md"
+        <a href="_sources/fdp4.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -482,7 +482,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Overview</h1>
+                <h1>Matching Layers</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -494,22 +494,17 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="matching-layers">
+<h1>Matching Layers<a class="headerlink" href="#matching-layers" title="Permalink to this headline">#</a></h1>
 </br>
-<p>There are many different ways in which data can be exchanged, and in order to get a grip on these different techniques we formalise them as <strong>Data Sharing Strategies</strong>. In this section we will cover three techniques in particular.</p>
+<p>Metadata should be matched internally with data which it represents. The idea of FAIR principles realization is that the external users can access only metadata layer, and cannot reach data which resides internally only.</p>
+<p>The request for data is typically made in terms of metadata, and that request should be translated internally by metadata layer to match schema of data. This matching happens internally, and user from outside doesn’t see the actual schema (if the actual schema is confidential).</p>
+<p>The relationship between metadata and data interfaces from the technical side is presented in the Figure below.</p>
 <p align = "center">
-<img src=".\_static\img\datastrategies.png" height="299" />
+<img src=".\_static\img\datainterface.png" height="422" />
 </br>
 <small>TNO, EFRO.</small>
 </p>
-<p>From Copy and Download, Researcher to Data and finally Model to Data, these techniques provide increasing capacity for security, reliability and privacy while also being increasing complexity to implement.</p>
-<p>Depending on the specific needs, a balance may be struck between implementation feasibility and requirements for security, privacy and reliability. In the following pages we will describe these strategies and both their advantages and disadvantages in more detail.</p>
-</br>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>For more background information on data sharing, we recommend reading the article <a class="reference external" href="https://www.tno.nl/en/focus-areas/information-communication-technology/roadmaps/data-sharing/">the key to further digitisation</a> presented by TNO.</p>
-</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -539,17 +534,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="fdp5.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="fdp3.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Metadata Standards</p>
+            <p class="prev-next-title">Metadata Layer</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="dss2.html" title="next page">
+    <a class='right-next' id="next-link" href="fdp5.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Copy and Download</p>
+        <p class="prev-next-title">Metadata Standards</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

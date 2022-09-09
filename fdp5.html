@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Overview &#8212; The FAIR Handbook</title>
+    <title>Metadata Standards &#8212; The FAIR Handbook</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Copy and Download" href="dss2.html" />
-    <link rel="prev" title="Metadata Standards" href="fdp5.html" />
+    <link rel="next" title="Overview" href="dss1.html" />
+    <link rel="prev" title="Matching Layers" href="fdp4.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -223,7 +223,7 @@ const thebe_selector_output = ".output, .cell_output"
   FAIR Data Points
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="fdp1.html">
    Overview
@@ -234,23 +234,23 @@ const thebe_selector_output = ".output, .cell_output"
    Building Blocks
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="fdp3.html">
    Metadata Layer
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
   <label for="toctree-checkbox-5">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="fdp4.html">
      Matching Layers
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="fdp5.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Metadata Standards
     </a>
    </li>
@@ -262,9 +262,9 @@ const thebe_selector_output = ".output, .cell_output"
   Data Sharing Strategies
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="dss1.html">
    Overview
   </a>
  </li>
@@ -405,7 +405,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/dualslash/The-FAIR-Handbook/issues/new?title=Issue%20on%20page%20%2Fdss1.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/dualslash/The-FAIR-Handbook/issues/new?title=Issue%20on%20page%20%2Ffdp5.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -433,7 +433,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/dss1.md"
+        <a href="_sources/fdp5.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -482,7 +482,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Overview</h1>
+                <h1>Metadata Standards</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -494,22 +494,24 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="overview">
-<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="metadata-standards">
+<h1>Metadata Standards<a class="headerlink" href="#metadata-standards" title="Permalink to this headline">#</a></h1>
 </br>
-<p>There are many different ways in which data can be exchanged, and in order to get a grip on these different techniques we formalise them as <strong>Data Sharing Strategies</strong>. In this section we will cover three techniques in particular.</p>
-<p align = "center">
-<img src=".\_static\img\datastrategies.png" height="299" />
+<p>Most metadata in datasets are added using ontologies. <strong>Ontologies</strong> contain formal specifications of terms and relationships between them. You can think of them as dictionaries, where every word in the dictionary (a concept) has a unique identifier (concept ID) and is described by other words from that dictionary (definitions and relationships).</p>
+<p>Since all concepts in the ontology are unique and defined by their relations with other concepts, they give a good explanation of what the concept means and how it is related to other concepts. There are many different ontologies being created for different types of data. We will describe here the most popular and widely used ontologies in the world: SNOWMED and FHIR.</p>
 </br>
-<small>TNO, EFRO.</small>
-</p>
-<p>From Copy and Download, Researcher to Data and finally Model to Data, these techniques provide increasing capacity for security, reliability and privacy while also being increasing complexity to implement.</p>
-<p>Depending on the specific needs, a balance may be struck between implementation feasibility and requirements for security, privacy and reliability. In the following pages we will describe these strategies and both their advantages and disadvantages in more detail.</p>
+<p>SNOMED CT:</p>
+<ul class="simple">
+<li><p>Is the most comprehensive, multilingual clinical healthcare terminology in the world</p></li>
+<li><p>Is a resource with comprehensive, scientifically validated clinical content</p></li>
+<li><p>Enables consistent representation of clinical content in electronic health records (EHR)</p></li>
+<li><p>Is mapped to other international standards</p></li>
+<li><p>Is in use in more than eighty countries.</p></li>
+</ul>
 </br>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>For more background information on data sharing, we recommend reading the article <a class="reference external" href="https://www.tno.nl/en/focus-areas/information-communication-technology/roadmaps/data-sharing/">the key to further digitisation</a> presented by TNO.</p>
-</div>
+<p>SNOMED CT supports the development of comprehensive high-quality clinical content in electronic health records. It provides a <strong>standardized</strong> way to represent clinical phrases captured by the clinician and enables automatic interpretation of these phrases.</p>
+</br>
+<p>Fast Healthcare Interoperability Resources (FHIR, pronounced “fire”) is a standard describing data formats and elements (known as “resources”) and an application programming interface (API) for <strong>exchanging</strong> electronic health records (EHR). It defines how healthcare information can be exchanged between different computer systems regardless of how it is stored in those systems, and is seen as complimentary to SNOWMED.</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -539,17 +541,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="fdp5.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="fdp4.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Metadata Standards</p>
+            <p class="prev-next-title">Matching Layers</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="dss2.html" title="next page">
+    <a class='right-next' id="next-link" href="dss1.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Copy and Download</p>
+        <p class="prev-next-title">Overview</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

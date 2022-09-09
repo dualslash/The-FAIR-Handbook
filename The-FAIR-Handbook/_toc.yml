@@ -26,7 +26,12 @@ parts:
         - file: r1
   - caption: FAIR Data Points
     chapters:
-    - file: z1
+    - file: fdp1
+    - file: fdp2
+    - file: fdp3
+      sections:
+        - file: fdp4
+        - file: fdp5
   - caption: Data Sharing Strategies
     chapters:
     - file: dss1
@@ -36,8 +41,7 @@ parts:
   - caption: Privacy enhancing Techniques
     chapters:
     - file: z3
-      sections:
-        - file: pet1
-        - file: pet2
-        - file: pet3
-        - file: pet4
+    - file: pet1
+    - file: pet2
+    - file: pet3
+    - file: pet4

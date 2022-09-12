@@ -45,3 +45,10 @@ parts:
     - file: pet2
     - file: pet3
     - file: pet4
+   - caption: Legal compliance
+    chapters:
+    - file: intro_legal
+    - file: legal_1
+    - file: legal_2
+    - file: legal_3
+    - file: legal_4

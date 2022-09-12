@@ -12,6 +12,7 @@ parts:
     - file: dss4
   - caption: FAIR Principles
     chapters:
+    - file: IntroFAIR
     - file: findable
       sections:
         - file: f1

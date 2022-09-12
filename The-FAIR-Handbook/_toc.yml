@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro_1
+root: intro1
 parts:
   - caption: Data Sharing Strategies
     chapters:
@@ -47,8 +47,8 @@ parts:
     - file: pet4
    - caption: Legal compliance
      chapters:
-    - file: intro_legal
-    - file: legal_1
-    - file: legal_2
-    - file: legal_3
-    - file: legal_4
+    - file: IntroLegal
+    - file: legal1
+    - file: legal2
+    - file: legal3
+    - file: legal4

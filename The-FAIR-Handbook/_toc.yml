@@ -46,7 +46,7 @@ parts:
     - file: pet2
     - file: pet3
     - file: pet4
-  - caption: Legal compliance
+  - caption: Legal instruments
     chapters:
     - file: IntroLegal
     - file: legal1

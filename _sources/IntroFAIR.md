@@ -1,4 +1,4 @@
-# Welcome to The FAIR Handbook
+# FAIR data
 
 </br>
 

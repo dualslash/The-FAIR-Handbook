@@ -8,3 +8,11 @@ The GDPR starts by outlining some general provisions, including definitions of c
 3.	Data concerning health means “personal data related to the physical or mental health of a natural person, including the provision of health care services which reveal information about his or her health status.” 
 An identifiable natural  person is a person who can be identified directly or indirectly. The manner of identification – either directly or indirectly – is not precisely circumscribed in the GDPR. A name could suffice to identify a person as well as an online identifier (such as an email address) or an identifier relating to the “physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.”  
 Processing is not described in a limitative sense either. The breadth of terms used (of which we presented a selection) indicates that basically all operations that can be performed on personal data (including collection and erasure/destruction) should be seen as processing operations. 
+
+
+
+
+
+:::{note}
+You can navigate this book by using the menu to the right, or by flipping pages at the bottom of each section.
+:::

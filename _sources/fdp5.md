@@ -25,4 +25,4 @@ SNOMED CT supports the development of comprehensive high-quality clinical conten
 
 Fast Healthcare Interoperability Resources (FHIR, pronounced "fire") is a standard describing data formats and elements (known as "resources") and an application programming interface (API) for **exchanging** electronic health records (EHR). It defines how healthcare information can be exchanged between different computer systems regardless of how it is stored in those systems, and is seen as complimentary to SNOWMED. 
 
-A more eloborated introduction for implementation of meta data might be found in the [FAIR cookbook of Elixer] (https://faircookbook.elixir-europe.org/content/recipes/introduction/metadata-fair.html)  
+A more eloborated introduction for implementation of meta data might be found in the [FAIR cookbook of Elixer](https://faircookbook.elixir-europe.org/content/recipes/introduction/metadata-fair.html)  

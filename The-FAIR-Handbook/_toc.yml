@@ -39,6 +39,12 @@ parts:
       sections:
         - file: fdp4
         - file: fdp5
+    - file: dia1
+      sections:
+        - file: dia2
+        - file: dia3
+        - file: dia4
+        - file: dia5
   - caption: Privacy enhancing Techniques
     chapters:
     - file: z3

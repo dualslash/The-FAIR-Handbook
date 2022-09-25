@@ -5,8 +5,8 @@
 
 #######################################################################################
 # Book settings
-title                       : Playbook for FAIR data sharing  # The title of the book. Will be placed in the left navbar.
-author                      : Ruduan Plug  # The author of the book
+title                       : Playbook for FAIR Data Sharing  # The title of the book. Will be placed in the left navbar.
+author                      : TNO  # The author of the book
 copyright                   : "2022"  # Copyright year to be placed in the footer
 logo                        : logo.png  # A path to the book logo
 

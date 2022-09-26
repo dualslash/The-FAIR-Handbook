@@ -36,7 +36,7 @@ Principles discussed in this playbook not only will make your data more manageab
 Many other organizations are active in the field of health data reuse and ecosystems. A selection of these is listed here:
 
 * [Health-RI](https://www.health-ri.nl/)
-* [Personal Health Train)(https://www.dtls.nl/fair-data/personal-health-train/)
+* [Personal Health Train](https://www.dtls.nl/fair-data/personal-health-train/)
 * [Elixer](https://elixir-europe.org/)
 * [Go-Fair](https://www.go-fair.org/)
 * [European Health Data Space](https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_en)
@@ -46,7 +46,7 @@ Many other organizations are active in the field of health data reuse and ecosys
 ## Health data sharing in practice
 Even though large scale adoptation of health data ecosystems is yet to be achieved, there are numerous examples of projects that have achieved and succesfully demonstrated safe, reliable, secure and ethical sharing of health data (insights) in an ecosystem setting. Some examples can be found here:
 
-* [C4Yourself](Dutch)(https://www.tno.nl/nl/newsroom/insights/2022/06/kies-decentrale-aanpak-hergebruik/)
+* [C4Yourself(Dutch)](https://www.tno.nl/nl/newsroom/insights/2022/06/kies-decentrale-aanpak-hergebruik/)
 
 :::{seealso}
 To already get a glimpse of the possibilities that are enabled by FAIR data, see [this article on privacy-preserving data analysis](https://www.tno.nl/en/focus-areas/information-communication-technology/roadmaps/data-sharing/federated-learning/) presented by TNO.

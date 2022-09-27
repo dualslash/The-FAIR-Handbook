@@ -4,7 +4,7 @@
 format: jb-book
 root: intro1
 parts:
-  - caption: Data Sharing Strategies
+  - caption: Data Sharing for research and innovation
     chapters:
     - file: dss1
     - file: dss2

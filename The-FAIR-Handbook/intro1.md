@@ -47,6 +47,7 @@ Many other organizations are active in the field of health data reuse and ecosys
 Even though large scale adoptation of health data ecosystems is yet to be achieved, there are numerous examples of projects that have achieved and succesfully demonstrated safe, reliable, secure and ethical sharing of health data (insights) in an ecosystem setting. Some examples can be found here:
 
 * [C4Yourself(Dutch)](https://www.tno.nl/nl/newsroom/insights/2022/06/kies-decentrale-aanpak-hergebruik/)
+* [Ecosystems as a services (artikel A.I. voorbeeld)](https://journals.plos.org/digitalhealth/article/comments?id=10.1371/journal.pdig.0000011)
 
 :::{seealso}
 To already get a glimpse of the possibilities that are enabled by FAIR data, see [this article on privacy-preserving data analysis](https://www.tno.nl/en/focus-areas/information-communication-technology/roadmaps/data-sharing/federated-learning/) presented by TNO.

@@ -10,7 +10,7 @@ parts:
     - file: dss2
     - file: dss3
     - file: dss4
-  - caption: FAIR Principles
+  - caption: FAIR data exchange
     chapters:
     - file: IntroFAIR
     - file: findable

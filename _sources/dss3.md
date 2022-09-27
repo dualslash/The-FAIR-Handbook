@@ -2,7 +2,7 @@
 
 </br>
 
-**Researcher to Data** is an approach where the data controller creates a secure computing environment in which interested parties are able to perform requests for data processing on a centralised database. This strategy requires technical expertise to implement, although many modern database solutions provide the tools to implement this without significant overhead.
+**Researcher to Data** is an approach where the data controller creates a secure computing environment in which interested parties are able to perform requests for data processing on a centralised database. This approach requires technical expertise to implement, although many modern database solutions provide the tools to implement this without significant overhead.
 
 <p align = "center">
 <img src=".\_static\img\datastrategy2.png" height="398" />

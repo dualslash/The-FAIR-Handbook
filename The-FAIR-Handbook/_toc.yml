@@ -31,8 +31,6 @@ parts:
     - file: reusable
       sections:
         - file: r1
-  - caption: FAIR Data Points
-    chapters:
     - file: fdp1
     - file: fdp2
     - file: fdp3

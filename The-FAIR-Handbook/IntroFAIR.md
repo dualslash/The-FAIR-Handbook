@@ -36,6 +36,4 @@ To already get a glimpse of the possibilities that are enabled by FAIR data, see
 
 Acquiring and storing data can be expensive. More reuse of existing data means a lower operational overhead and a more sustainable data strategy. In this digital handbook we will cover each of the aspects of FAIR and how FAIR can be implemented as a business data strategy. In addition we will discuss the importance of FAIR data and services, the core principles, use cases, as well as related technologies. 
 
-:::{note}
-You can navigate this book by using the menu to the right, or by flipping pages at the bottom of each section.
-:::
+

@@ -10,7 +10,7 @@
 <small>TNO, EFRO</small>
 </p>
 
-The most simple form of Copy and Download is by sending data files, such as excel files or compressed archives, via email or via a public download link. More advanced and secure methods are for example by creating Application Programming Interfaces (API) that control access to the data, through a secure or private download link. 
+The most simple form of Copy and Download is by sending data files, such as excel files or compressed archives, via email or via a public download link. More advanced and secure methods are for example by creating Application Programming Interfaces [(API)](https://www.hl7.org/fhir/http.html) that control access to the data, through a secure or private download link. 
 
 In most cases the data controller and data recipient make a legal agreement in which the limitations of further data usage are being described. Still, Copy and Download poses the problem of losing control over the spread of data, does not impose limitations on resharing or copying of data and does not inherently provide means of tracking data access. This can raise privacy concerns and makes the method unsuitable when dealing with sensitive data. 
 

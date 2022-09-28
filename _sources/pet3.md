@@ -18,7 +18,8 @@ Federated Learning.
 Before going into detail of Federated Learning, we need to go into the difference between vertically and horizontally partitioned data. In any data sharing ecosystem, data can be split up in two different ways (or both). When data is horizontally partitioned, it means that two databases have the same type of data (features, variables, measurements, etc.) but different records of those features. An example could be two banks. Both have account information of their clients (such as balance sheet and contact information) but they have different clients in their systems. In the case of vertically partitioned data, two databases have different information for the same entity. An example of this would be that your dental records are stored in the database of the dentist and your prescribed drugs are stored in the database of your pharmacy. They share some information to enable linking the data (such as your name and birthday) but otherwise contain unique information about you.
 FL has a number of advantages for a health data ecosystem. In the simplest implementations (Horizontal FL: where data is split on records), communication is only required to and from the central authority. Other, more complex implementations of FL exist, that allow for models to be trained on vertically partitioned data (data split on column features). 
 
-```{note} {Implementations}
+```{admonition} Implementations
+:class: tip
 There are a number of public libraries available for implementation in a wide range of languages, such as Romanini, Daniele, et al. "Pyvertical: A vertical federated learning framework for multi-headed split." arXiv preprint arXiv:2104.00489 (2021) and [Tensorflow](https://github.com/tensorflow/federated).
 Many commercial implementations of FL exist as well, such as those offered by IBM, NetApp, Sherpa.AI, Google and many more. 
 
@@ -48,7 +49,8 @@ The advantages for MPC are as follows. Required minimum of the level of data pri
 A major drawback of MPC is the high communication overhead in respect with the typical data transfer. It happens because the cryptography used for security, by itself generates quite a lot of data which should be transferred together with the actual data being shared. This communication overhead grows exponentially with the number of parties involved, this means that there is a practical limit to the number of parties that can be involved (depending application needed for the ecosystem). Additionally, there is limited ability to use sophisticated machine learning models. Although there is active research on the topic of applying more sophisticated models using SMPC, widescale implementations in public available libraries are lacking. Finally, the governance is more complex. One needs either a central authority in the network or a decentralized system (such as blockchain) to provide governance structure needed.
 
 
-```{note} {Implementations}
+```{admonition} Implementations
+:class: tip
 Open source implementations are developed by TNO together with academic institutes in collaboration with business and SMEs. Results can be found on [Github](https://github.com/TNO-MPC/) and [PyPI](https://pypi.org/search/?q=%22tno.mpc%22).
 Commercial implementations of this exist, such as [LinkSight](https://www.linksight.nl/) (a TNO spinout) and [Roseman labs](https://rosemanlabs.com/?gclid=CjwKCAjw4c-ZBhAEEiwAZ105RTL9QuQQ8lfDwjnfJnah5LVFwkSv_bkpbeqPFrNKnMl04rGE_JL9WRoCd8EQAvD_BwE) in the Netherlands. 
 ```

@@ -648,10 +648,9 @@ Federated Learning can be most simply thought of as model sharing. By sending mo
 </figure>
 <p>Before going into detail of Federated Learning, we need to go into the difference between vertically and horizontally partitioned data. In any data sharing ecosystem, data can be split up in two different ways (or both). When data is horizontally partitioned, it means that two databases have the same type of data (features, variables, measurements, etc.) but different records of those features. An example could be two banks. Both have account information of their clients (such as balance sheet and contact information) but they have different clients in their systems. In the case of vertically partitioned data, two databases have different information for the same entity. An example of this would be that your dental records are stored in the database of the dentist and your prescribed drugs are stored in the database of your pharmacy. They share some information to enable linking the data (such as your name and birthday) but otherwise contain unique information about you.
 FL has a number of advantages for a health data ecosystem. In the simplest implementations (Horizontal FL: where data is split on records), communication is only required to and from the central authority. Other, more complex implementations of FL exist, that allow for models to be trained on vertically partitioned data (data split on column features).</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>{Implementations}
-There are a number of public libraries available for implementation in a wide range of languages, such as Romanini, Daniele, et al. “Pyvertical: A vertical federated learning framework for multi-headed split.” arXiv preprint arXiv:2104.00489 (2021) and <a class="reference external" href="https://github.com/tensorflow/federated">Tensorflow</a>.
+<div class="tip admonition">
+<p class="admonition-title">Implementations</p>
+<p>There are a number of public libraries available for implementation in a wide range of languages, such as Romanini, Daniele, et al. “Pyvertical: A vertical federated learning framework for multi-headed split.” arXiv preprint arXiv:2104.00489 (2021) and <a class="reference external" href="https://github.com/tensorflow/federated">Tensorflow</a>.
 Many commercial implementations of FL exist as well, such as those offered by IBM, NetApp, <a class="reference external" href="http://Sherpa.AI">Sherpa.AI</a>, Google and many more.</p>
 </div>
 <p>Due to the large number of mature implementations, FL is relatively simple to use. An additional advantage is the low communication overhead compared to other distributed privacy preserving techniques, as the only communication that is required is directly from and to the central authority, communication overhead is significantly lower than computational overhead for all but the most simple models.
@@ -672,10 +671,9 @@ Finally, local bias may hamper model accuracy. Although there are techniques for
 </figure>
 <p>The advantages for MPC are as follows. Required minimum of the level of data privacy can be mathematically guaranteed. There is no minimum number of parties required and theoretically no maximum either. And finally, the models are trustless (models on encrypted data).
 A major drawback of MPC is the high communication overhead in respect with the typical data transfer. It happens because the cryptography used for security, by itself generates quite a lot of data which should be transferred together with the actual data being shared. This communication overhead grows exponentially with the number of parties involved, this means that there is a practical limit to the number of parties that can be involved (depending application needed for the ecosystem). Additionally, there is limited ability to use sophisticated machine learning models. Although there is active research on the topic of applying more sophisticated models using SMPC, widescale implementations in public available libraries are lacking. Finally, the governance is more complex. One needs either a central authority in the network or a decentralized system (such as blockchain) to provide governance structure needed.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>{Implementations}
-Open source implementations are developed by TNO together with academic institutes in collaboration with business and SMEs. Results can be found on <a class="reference external" href="https://github.com/TNO-MPC/">Github</a> and <a class="reference external" href="https://pypi.org/search/?q=%22tno.mpc%22">PyPI</a>.
+<div class="tip admonition">
+<p class="admonition-title">Implementations</p>
+<p>Open source implementations are developed by TNO together with academic institutes in collaboration with business and SMEs. Results can be found on <a class="reference external" href="https://github.com/TNO-MPC/">Github</a> and <a class="reference external" href="https://pypi.org/search/?q=%22tno.mpc%22">PyPI</a>.
 Commercial implementations of this exist, such as <a class="reference external" href="https://www.linksight.nl/">LinkSight</a> (a TNO spinout) and <a class="reference external" href="https://rosemanlabs.com/?gclid=CjwKCAjw4c-ZBhAEEiwAZ105RTL9QuQQ8lfDwjnfJnah5LVFwkSv_bkpbeqPFrNKnMl04rGE_JL9WRoCd8EQAvD_BwE">Roseman labs</a> in the Netherlands.</p>
 </div>
 </section>

@@ -1,7 +1,8 @@
 # Augmentation PETs
 A final strain of PETs touched upon in this playbook is called augmentation. Specifically, synthetic data will be addressed here. Synthetic data (SD) is a promising PET allowing maximum privacy while retaining the utility of the original data. SD does not contain any of the identifiable attributes of actual persons or events. The major advantage of SD is the flexibility of the artificially created data. It is especially popular in analysis of imaging data and enterprise scenarios where one needs a production pipeline where the predictive models need to be filled with adequate data. 
 
-```{note} {Implementations}
+```{admonition} Implementations
+:class: tip
 Many open source libraries exist that allow the creation of SD, such as in [R](https://cran.r-project.org/web/packages/synthesis/synthesis.pdf) and [Python](https://pytorch.org/) Often, variational autoencoders (VAEs) or generative adversarial network (GANs) are used.
 ``` 
 

@@ -54,7 +54,7 @@ To already get a glimpse of the possibilities that are enabled by FAIR data, see
 ```
 
 ## Call to action
-Reusing health data is not an easy task. Setting up an ecosystem even less. TNO is active in many public-private partnerships and other collaborations with SMEs to setup health data ecosystems. We are actively looking for new partners in these projects. 
+Reusing health data is not an easy task. And setting up an ecosystem is not something done alone. We can help! TNO is active in many public-private partnerships and other collaborations with SMEs to setup health data ecosystems. We are actively looking for new partners in these and new projects. 
 
 `````{admonition} Reach out!
 :class: tip

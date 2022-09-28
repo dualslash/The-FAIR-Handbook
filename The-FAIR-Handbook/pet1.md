@@ -5,7 +5,7 @@ A subtype of minimalization is pseudo-anonymization. Pseudonymization is defined
 In a data ecosystem, the first step then would be to predict those combinations of attributes after which one removes or suppresses these from the data. After this is done, one can share the data safely with other members of the ecosystem. Methods of determining if one obtained privacy in a given datasets can be found using measures such as k-anonymity, l-diversity and t-closeness[^footnote2]. 
 
 ```{tip} K-anonymity} 
-K-anonymity gained large scale media attention when in 2018 it was used by Junade Ali to create a protocol based on hashing used to anonymously verify if a password was leaked in any large scale database breaches.
+K-anonymity gained large scale media attention when [in 2018 it was used by Junade Ali](https://arstechnica.com/information-technology/2018/02/new-tool-safely-checks-your-passwords-against-a-half-billion-pwned-passwords/) to create a protocol based on hashing used to anonymously verify if a password was leaked in any large scale database breaches.
 ```
 The challenge with these techniques lies in data with many features or a high dimensionality, which will be often the case in a health data ecosystem. It is impossible to anticipate which combination of attributes might be used to reidentify subjects since the myriad of combinations cannot be known before seeing the other datasets in the ecosystem. One needs to predict accurately what combinations might be used, thus leaving potential residual privacy risks given the impossibility to do so. Or one has to preemptively redacts large amounts of attributes significantly reducing the utility of data. Both options lead to undesirable outcomes. 
 

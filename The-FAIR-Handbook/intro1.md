@@ -1,4 +1,4 @@
-# Welcome to The Playbook for health data sharing ecosystems 
+# Welcome to the playbook for health data sharing ecosystems 
 
 </br>
 

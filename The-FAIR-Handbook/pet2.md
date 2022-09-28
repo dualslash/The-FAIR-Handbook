@@ -16,7 +16,8 @@ Demonstrating two types of DP, where noise is added either locally or on the glo
 
 The model for generating noise is known to the maintainer of the data and can therefore be included in subsequent analyses or machine learning applications. This allows for the ‘deciphering’ of the noisy data to maintain high utility. DP is thus a reversible PET. With the right key, one can convert back to the sensitive data. DP is a robust set of PET and measures to determine its success are well defined (epsilon-differential privacy). 
 
-```{note} {Implementations}
+```{admonition} Implementations
+:class: tip
 Implementations are widely available. [Google](https://github.com/google/differential-privacy)  has C++, Go and Java algorithms, Microsoft has open-sourced a Rust-based library with Python bindings called [SmartNoise](https://smartnoise.org/)  and there is the [OpenDP](https://opendp.org/) community boasting an impressive array of free implementations and documentation for enterprise use of DP. 
 ```
 DP is not without serious drawbacks for the use in a health data ecosystem. The main problem lies in its inability to handle outliers in the data. These are often meaningful, both clinically and financially, in healthcare settings. Additionally, as with minimalization, linking a single subject over datasets is impossible without some compromise to privacy. Finally, it has trouble with time series data and cannot handle some of the state-of-the-art in machine learning models. This makes it a hard-to-implement PET for a well-functioning data ecosystem. 

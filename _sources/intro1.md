@@ -49,8 +49,14 @@ Even though large scale adoptation of health data ecosystems is yet to be achiev
 * [C4Yourself(Dutch)](https://www.tno.nl/nl/newsroom/insights/2022/06/kies-decentrale-aanpak-hergebruik/)
 * [Ecosystems as a services (artikel A.I. voorbeeld)](https://journals.plos.org/digitalhealth/article/comments?id=10.1371/journal.pdig.0000011)
 
-:::{seealso}
+```{admonition} From theory to practice
 To already get a glimpse of the possibilities that are enabled by FAIR data, see [this article on privacy-preserving data analysis](https://www.tno.nl/en/focus-areas/information-communication-technology/roadmaps/data-sharing/federated-learning/) presented by TNO.
-:::
+```
 
+## Call to action
+Reusing health data is not an easy task. Setting up an ecosystem even less. TNO is active in many public-private partnerships and other collaborations with SMEs to setup health data ecosystems. We are actively looking for new partners in these projects. 
 
+`````{admonition} Reach out!
+:class: tip
+If you want to learn more, reach out to robin.vanstokkum@tno.nl or andre.boorsma@tno.nl. 
+`````

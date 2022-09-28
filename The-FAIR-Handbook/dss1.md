@@ -2,8 +2,8 @@
 
 </br>
 
-The focus of this playbook is to provide information and insights about data sharing for research and to spur innovation. In this respect their are many different ways in which data can be exchanged. Here we look at three different data sharing approaches based on the paper [Bringing Code to Data](https://pubmed.ncbi.nlm.nih.gov/32540846/). Although this article discusses the governance needed for data exchange, the distinction in three approaches provide a good start to get more grip on the matter. 
-
+The focus of this playbook is to provide information and insights about data sharing for research and to spur innovation. In this respect their are many different ways in which data can be exchanged. Here we look at three different data sharing approaches based on the paper [Bringing Code to Data](https://pubmed.ncbi.nlm.nih.gov/32540846/). Although the focus of this article is the governance needed for data exchange, the distinction in three data sharing approaches provides a good start to get more grip on the matter. 
+data
 <p align = "center">
 <img src=".\_static\img\datastrategies.png" height="299" />
 </br>

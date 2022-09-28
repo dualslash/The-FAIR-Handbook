@@ -577,7 +577,7 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="model-to-data-pets">
-<h1>Model-to-data PETs<a class="headerlink" href="#model-to-data-pets" title="Permalink to this headline">#</a></h1>
+<span id="model-to-data"></span><h1>Model-to-data PETs<a class="headerlink" href="#model-to-data-pets" title="Permalink to this headline">#</a></h1>
 <p>Another branch of PETs is directly aimed at creating an infrastructure of actors that aim to utilize the value of the combination of their respective data. In this branch of PETs, the data is not shared into a single large dataset or data lake upon which models can be trained but the models are sent to the data. Two types of these model-to-data PETs will be discussed here: Federated Learning (FL) and Secure Multiparty Computation (MPC). Both are PETs aimed at generating machine learning models. Although some of the architecture of their implementation can be relatively similar, they are distinct, and each has its own strengths and weaknesses that dictate the appropriate application for each.</p>
 <p>Figure XX. Federated Learning
 Federated Learning can be most simply thought of as model sharing. By sending models to the various data sources, we can train and update machine learning models without having to ever communicate the raw, private data. This communication of the models however does require a central authority (a server) to actually send the models, as well as aggregate the results after the model update steps.

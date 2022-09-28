@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Privacy enhancing techniques (PET) &#8212; Playbook for health data sharing ecosystems</title>
+    <title>Privacy-enhancing technologies (PET) &#8212; Playbook for health data sharing ecosystems</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -322,7 +322,7 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Privacy enhancing techniques (PET)
+   Privacy-enhancing technologies (PET)
   </a>
  </li>
  <li class="toctree-l1">
@@ -552,23 +552,70 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-are-pets">
+   What are PETs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#levels-of-sensitivity">
+   Levels of sensitivity
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Privacy enhancing techniques (PET)</h1>
+                <h1>Privacy-enhancing technologies (PET)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-are-pets">
+   What are PETs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#levels-of-sensitivity">
+   Levels of sensitivity
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -576,16 +623,20 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="privacy-enhancing-techniques-pet">
-<h1>Privacy enhancing techniques (PET)<a class="headerlink" href="#privacy-enhancing-techniques-pet" title="Permalink to this headline">#</a></h1>
-<p>(e)Health data drawn from health data sources, such as hospitals and personal wearables are arguably one of the most valuable and sensitive types of data. The value of this type of data is the potential to support research and facilitate product development within healthcare, digital health, public health and many others areas . However, this data is highly sensitive since health data reveals information about one’s health conditions, family members, ones psycho-social state and history.
-One of the main goals of this report is to describe possible techniques and technologies aimed at creating an appropriate data sharing strategy obtaining high utility whilst protecting the sensitive nature RWD in context of health data ecosystems. Utility here is defined as the value of data with regard to its completeness and validity. Disclosing data often results in striking a balance between safeguarding the sensitivity and utility. If sensitivity is high, little of the data can be shared resulting in low validity. Simply sharing the data as-is may yield high utility but is often prohibited or undesirable for other reasons. Techniques described here will be evaluated in their ability to strike a balance between utility and privacy in the context of a health data ecosystem.
-There are at least four components that make up the level of sensitivity of health data . These four components need to be taken into account when setting up an appropriate data sharing strategy.
-First, the level of detail of the data and the associated ability to identify a specific individual or subsample from the population.
+  <section class="tex2jax_ignore mathjax_ignore" id="privacy-enhancing-technologies-pet">
+<h1>Privacy-enhancing technologies (PET)<a class="headerlink" href="#privacy-enhancing-technologies-pet" title="Permalink to this headline">#</a></h1>
+<section id="what-are-pets">
+<h2>What are PETs<a class="headerlink" href="#what-are-pets" title="Permalink to this headline">#</a></h2>
+<p>One of the main goals of this report is to describe possible techniques and technologies aimed at creating an appropriate data sharing strategy obtaining high utility whilst protecting the sensitive nature of health data in context of health data ecosystems. So-called Privacy-enhancing technologies (PET) are aimed at minimizing personal data use, maximizing data security, while maintaining adequate utility. Utility here is defined as the value of data with regard to its completeness and validity. Disclosing data often results in striking a balance between safeguarding the sensitivity and utility. If sensitivity is high, little of the data can be shared resulting in low validity. Simply sharing the data as-is may yield high utility but is often prohibited or undesirable for other reasons. Techniques described here will be evaluated in their ability to strike a balance between utility and privacy in the context of a health data ecosystem. PETs form a diverse set of techniques due to their multidisciplinary background and relatively novel character. Four types of PETs will be touched upon. For each category, one or two techniques will be elaborated, examples will be given and relevant resources will be referenced. Many more techniques exists, but providing an exhaustive overview is beyond the scope of this report.</p>
+</section>
+<section id="levels-of-sensitivity">
+<h2>Levels of sensitivity<a class="headerlink" href="#levels-of-sensitivity" title="Permalink to this headline">#</a></h2>
+<p>Before diving into the different branches of PETs, it is important to distinguish between different components that make up the level of sensitivity of health data. These four components need to be taken into account when setting up an appropriate data sharing strategy and can be used to assess the different options available.</p>
+<p>First, the level of detail of the data and the associated ability to identify a specific individual or subsample from the population.
 Second, the level of consent or choices the subjects are given to protect their data (both for primary and re-use of their data).
 Third, the degree into which privacy and security measures are built into data transfer systems or data collection devices.
 Fourth,  the stringency of applicable legal or policy framework for the collection and sharing of health data.</p>
-<p>Methods to enhance privacy whilst aiming for high utility are called Privacy Enhancing Technologies (PETs). PETs can be described as a diverse set of technical means aimed at the protection of their users’ privacy. PETs form a diverse set of techniques due to their multidisciplinary background and relatively novel character. Four types of PETs will be touched upon. For each category, one or two techniques will be elaborated. Many more techniques exists, but providing an exhaustive overview is beyond the scope of this report.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

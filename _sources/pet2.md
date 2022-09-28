@@ -28,22 +28,27 @@ There are two core features of HE. First feature consist of semantic security. A
 HE has been demonstrated in health data research to have been a secure option to train deep learning models without having the model owner see the original data or the model parameters. MORE (Matrix Operation for Randomization or Encryption) is an full HE implementation (FHE) that allows a third party to train models on the sensitive data without compromising privacy or utility [^footnote1][^footnote2]. 
 The main downside of any full HE scheme is the overhead posed on the system. It requires vast amounts of memory and processing power to enable the training machine learning models. Alternatively, one could alleviate some of the stringent requirements to gain processing speed. However, this results in compromising the privacy of the data. Another downside is the network aspect. FHE is suited for a third party analyzing the data when time is not of the essence (outsourced analytics). However, when an ecosystem is the goal, insight of data and subsequent models need to be transferred over multiple parties. For example, three parties can have data they want to pool and analyze together, while protecting the sensitive nature of their data. FHE is less suited for this type interaction between several parties. Another branch PETs, called secure Multiparty computation (MPC), remedies this by enabling joint computation in an encrypted space, building on the FHE principles. More on MPC can be found under the [Model-to-data PETs](Model-to-data-label) chapter. 
 
-```{note} {Implementations}
+```{admonition} Implementations
+:class: tip
 For a Python library with HE implementations, both simple math operations and machine learning applications, see [Pyfhel](https://github.com/ibarrond/Pyfhel).
 ```
+
 
 ## Zero-Knowledge Proofs
 A third method of algorithmic PETs is aimed at giving a legitimate actor access to data that it is allowed to use. These Zero-Knowledge Proofs (ZKP) are aimed at verifying the digital identity and data of an actor without explicitly sharing the data itself. According to Preuveneers & Joosen (2016)[^footnote3] : “A ZKP enables the prover to make sure the verifier is certain some statements are correct, but the verifier does not learn anything except the validity of the statement.” An example would be the COVID-19 vaccine passport used in the EU. By scanning a QR-code, anybody could inquire if the person in front of them was indeed vaccinated, while obtaining a small portion of personal data to verify if the user is who they say they are (birthdate). 
 ZKP are a relatively young branch of PETs but already demonstrates promising results for large scale communication between devices in health data ecosystems, such Internet of Things networks between medical sensors or sharing reports between several care providers (e.g.: hospitals and GPs). The main challenge in ZKP lies in its reliance on the data quality of the underlying data, which cannot be verified by other members in the ecosystem. Additionally, lack of machine learning applications make it limited to simple data exchanges, thus limiting its potential for SME ecosystems developing services employing any automated learning or other analytical operations on the data.
 
-```{note} {Implementations}
+```{admonition} Implementations
+:class: tip
 To learn more on ZKP and how to implement them, read the excellent [Stanford Code guide](https://codethechange.stanford.edu/guides/guide_zk.html). 
 ```
 
 ## Aggregation of data
 The fourth method of algorithmic PET is aggregation of data. By providing summary statistics such as means, medians or correlations, meaningful properties of data can be extracted and shared while masking the unique values of the subjects making up the data. Aggregation of data is often used by public bodies and institutions such as Statistics Netherlands (CBS) to share data publicly. Aggregation, just as minimalization, are irreversible. Once the sensitive data has been removed, it cannot be retrieved again. As with the methods described under minimalization, utility of the data is greatly reduced by this way and therefore this PET is of limited use for a data ecosystem.
 
-```{note}{Resource}
+
+```{admonition} Resource
+:class: note
 Additional information on aggregation of data can be found [here](https://bookdown.org/martin_monkman/DataScienceResources_book/anonymity-and-confidentiality.html) which provides an overview on the methods of many national statistics offices around the globe. 
 ```
 

@@ -669,25 +669,27 @@ Implementations are widely available. <a class="reference external" href="https:
 <p>There are two core features of HE. First feature consist of semantic security. An adversary will be unable to distinguish whether a piece of ciphertext is the encrypted version out of a collection of different plaintexts. The second feature is concerned with one-wayness. In the case of an electronic health record, an adversary cannot link a piece of ciphertext to the corresponding plaintext based solely on the public key of a patient held by a data owner (used to link a patient to their health record).
 HE has been demonstrated in health data research to have been a secure option to train deep learning models without having the model owner see the original data or the model parameters. MORE (Matrix Operation for Randomization or Encryption) is an full HE implementation (FHE) that allows a third party to train models on the sensitive data without compromising privacy or utility <a class="footnote-reference brackets" href="#footnote1" id="id1">1</a><a class="footnote-reference brackets" href="#footnote2" id="id2">2</a>.
 The main downside of any full HE scheme is the overhead posed on the system. It requires vast amounts of memory and processing power to enable the training machine learning models. Alternatively, one could alleviate some of the stringent requirements to gain processing speed. However, this results in compromising the privacy of the data. Another downside is the network aspect. FHE is suited for a third party analyzing the data when time is not of the essence (outsourced analytics). However, when an ecosystem is the goal, insight of data and subsequent models need to be transferred over multiple parties. For example, three parties can have data they want to pool and analyze together, while protecting the sensitive nature of their data. FHE is less suited for this type interaction between several parties. Another branch PETs, called secure Multiparty computation (MPC), remedies this by enabling joint computation in an encrypted space, building on the FHE principles. More on MPC can be found under the <span class="xref myst">Model-to-data PETs</span> chapter.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>{Implementations}
-For a Python library with HE implementations, both simple math operations and machine learning applications, see <a class="reference external" href="https://github.com/ibarrond/Pyfhel">Pyfhel</a>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Implementations</p>
+<p>For a Python library with HE implementations, both simple math operations and machine learning applications, see <a class="reference external" href="https://github.com/ibarrond/Pyfhel">Pyfhel</a>.</p>
 </div>
 </section>
 <section id="zero-knowledge-proofs">
 <h2>Zero-Knowledge Proofs<a class="headerlink" href="#zero-knowledge-proofs" title="Permalink to this headline">#</a></h2>
 <p>A third method of algorithmic PETs is aimed at giving a legitimate actor access to data that it is allowed to use. These Zero-Knowledge Proofs (ZKP) are aimed at verifying the digital identity and data of an actor without explicitly sharing the data itself. According to Preuveneers &amp; Joosen (2016)<a class="footnote-reference brackets" href="#footnote3" id="id3">3</a> : “A ZKP enables the prover to make sure the verifier is certain some statements are correct, but the verifier does not learn anything except the validity of the statement.” An example would be the COVID-19 vaccine passport used in the EU. By scanning a QR-code, anybody could inquire if the person in front of them was indeed vaccinated, while obtaining a small portion of personal data to verify if the user is who they say they are (birthdate).
 ZKP are a relatively young branch of PETs but already demonstrates promising results for large scale communication between devices in health data ecosystems, such Internet of Things networks between medical sensors or sharing reports between several care providers (e.g.: hospitals and GPs). The main challenge in ZKP lies in its reliance on the data quality of the underlying data, which cannot be verified by other members in the ecosystem. Additionally, lack of machine learning applications make it limited to simple data exchanges, thus limiting its potential for SME ecosystems developing services employing any automated learning or other analytical operations on the data.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>{Implementations}
-To learn more on ZKP and how to implement them, read the excellent <a class="reference external" href="https://codethechange.stanford.edu/guides/guide_zk.html">Stanford Code guide</a>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Implementations</p>
+<p>To learn more on ZKP and how to implement them, read the excellent <a class="reference external" href="https://codethechange.stanford.edu/guides/guide_zk.html">Stanford Code guide</a>.</p>
 </div>
 </section>
 <section id="aggregation-of-data">
 <h2>Aggregation of data<a class="headerlink" href="#aggregation-of-data" title="Permalink to this headline">#</a></h2>
 <p>The fourth method of algorithmic PET is aggregation of data. By providing summary statistics such as means, medians or correlations, meaningful properties of data can be extracted and shared while masking the unique values of the subjects making up the data. Aggregation of data is often used by public bodies and institutions such as Statistics Netherlands (CBS) to share data publicly. Aggregation, just as minimalization, are irreversible. Once the sensitive data has been removed, it cannot be retrieved again. As with the methods described under minimalization, utility of the data is greatly reduced by this way and therefore this PET is of limited use for a data ecosystem.</p>
+<div class="note admonition">
+<p class="admonition-title">Resource</p>
+<p>Additional information on aggregation of data can be found <a class="reference external" href="https://bookdown.org/martin_monkman/DataScienceResources_book/anonymity-and-confidentiality.html">here</a> which provides an overview on the methods of many national statistics offices around the globe.</p>
+</div>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
 <dt class="label" id="footnote1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>

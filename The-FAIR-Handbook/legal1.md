@@ -6,9 +6,11 @@ The GDPR is a rather encompassing piece of legislation that covers a wide variet
 <br>
 1. **Personal data** means “any information relating to an identified or identifiable natural person (‘data subject’).” 
 <br>
-3. **Processing** means “any operation or set of operations which is performed on personal data or on sets of personal data … such as collection, recording, organisation, structuring, …dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.” 
 <br>
-5. **Data concerning health** means “personal data related to the physical or mental health of a natural person, including the provision of health care services which reveal information about his or her health status.” 
+2. **Processing** means “any operation or set of operations which is performed on personal data or on sets of personal data … such as collection, recording, organisation, structuring, …dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.” 
+<br>
+<br>
+3. **Data concerning health** means “personal data related to the physical or mental health of a natural person, including the provision of health care services which reveal information about his or her health status.” 
 <br>
 <br>
 An **identifiable natural  person** is a person who can be identified directly or indirectly. The manner of identification – either directly or indirectly – is not precisely circumscribed in the GDPR. A name could suffice to identify a person as well as an online identifier (such as an email address) or an identifier relating to the “physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.”  

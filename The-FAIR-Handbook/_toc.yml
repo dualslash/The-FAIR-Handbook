@@ -50,7 +50,7 @@ parts:
     - file: pet2
     - file: pet3
     - file: pet4
-  - caption: Legal instruments
+  - caption: Legislation
     chapters:
     - file: IntroLegal
     - file: legal1

@@ -7,7 +7,7 @@ Differential privacy defines privacy as the inability for an adversary to tell w
 
 ```{figure} ./_static/img/dp_efro.png
 ---
-height: 150px
+height: 400px
 name: dp-efro
 ---
 Demonstrating two types of DP, where noise is added either locally or on the global level.

@@ -3,13 +3,11 @@
 Another branch of PETs is directly aimed at creating an infrastructure of actors that aim to utilize the value of the combination of their respective data. In this branch of PETs, the data is not shared into a single large dataset or data lake upon which models can be trained but the models are sent to the data. Two types of these model-to-data PETs will be discussed here: Federated Learning (FL) and Secure Multiparty Computation (MPC). Both are PETs aimed at generating machine learning models. Although some of the architecture of their implementation can be relatively similar, they are distinct, and each has its own strengths and weaknesses that dictate the appropriate application for each. 
 
 ## Federated Learning
- 
-Figure XX. Federated Learning
 Federated Learning can be most simply thought of as model sharing. By sending models to the various data sources, we can train and update machine learning models without having to ever communicate the raw, private data. This communication of the models however does require a central authority (a server) to actually send the models, as well as aggregate the results after the model update steps.
 
-```{figure} ../images/fl_efro.png
+```{figure}  ./_static/img/fl_efro.png
 ---
-height: 150px
+height: 350px
 name: fl-efro
 ---
 Federated Learning.
@@ -37,9 +35,9 @@ Finally, local bias may hamper model accuracy. Although there are techniques for
 
 A second architectural PET is called secure Multiparty Computation (MPC). MPC is a collection of techniques that allow individual parties to calculate a function in collaboration, without the need to share the raw data. This is achieved through one or a combination of homomorphic encryption (encryption that allows for computations to be performed on the encrypted data) and secret sharing (communicating incomplete data). MPC is unique amongst privacy preserving methods for model creation due to the fact that data privacy is mathematically guaranteed up to a limited number of coordinated malicious parties ( parties within the network who attempt to compromise secret information). The most prominent drawbacks to MPC is the communication overhead, which severely limits the number of participants that may be present for a reasonable computation time.
 
-```{figure} ../images/mpc_efro.png
+```{figure}  ./_static/img/mpc_efro.png
 ---
-height: 150px
+height: 350px
 name: mpc-efro
 ---
 Secure Multiparty Computation.

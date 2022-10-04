@@ -4,7 +4,7 @@ Every of these hereabove described techniques and solutions partially solves the
 The solutions can be separated into 3 different layers. For every layer one or more techniques could/should be chosen to guarantee in the end specified requested level of privacy.
 The layers and techniques related to that layers are presented at a figure below.
 
-```{figure} ./_static/img/esas-efro.png
+```{figure} ./_static/img/esas_efro.png
 ---
 height: 400px
 name: esas-efro

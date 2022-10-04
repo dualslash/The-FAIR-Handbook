@@ -643,10 +643,9 @@ title="Print to PDF"
 <p>Another branch of PETs is directly aimed at creating an infrastructure of actors that aim to utilize the value of the combination of their respective data. In this branch of PETs, the data is not shared into a single large dataset or data lake upon which models can be trained but the models are sent to the data. Two types of these model-to-data PETs will be discussed here: Federated Learning (FL) and Secure Multiparty Computation (MPC). Both are PETs aimed at generating machine learning models. Although some of the architecture of their implementation can be relatively similar, they are distinct, and each has its own strengths and weaknesses that dictate the appropriate application for each.</p>
 <section id="federated-learning">
 <h2>Federated Learning<a class="headerlink" href="#federated-learning" title="Permalink to this headline">#</a></h2>
-<p>Figure XX. Federated Learning
-Federated Learning can be most simply thought of as model sharing. By sending models to the various data sources, we can train and update machine learning models without having to ever communicate the raw, private data. This communication of the models however does require a central authority (a server) to actually send the models, as well as aggregate the results after the model update steps.</p>
+<p>Federated Learning can be most simply thought of as model sharing. By sending models to the various data sources, we can train and update machine learning models without having to ever communicate the raw, private data. This communication of the models however does require a central authority (a server) to actually send the models, as well as aggregate the results after the model update steps.</p>
 <figure class="align-default" id="fl-efro">
-<a class="reference internal image-reference" href="../images/fl_efro.png"><img alt="../images/fl_efro.png" src="../images/fl_efro.png" style="height: 150px;" /></a>
+<a class="reference internal image-reference" href="_images/fl_efro.png"><img alt="_images/fl_efro.png" src="_images/fl_efro.png" style="height: 350px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 2 </span><span class="caption-text">Federated Learning.</span><a class="headerlink" href="#fl-efro" title="Permalink to this image">#</a></p>
 </figcaption>
@@ -669,7 +668,7 @@ Finally, local bias may hamper model accuracy. Although there are techniques for
 <h2>Secure Multiparty Computation<a class="headerlink" href="#secure-multiparty-computation" title="Permalink to this headline">#</a></h2>
 <p>A second architectural PET is called secure Multiparty Computation (MPC). MPC is a collection of techniques that allow individual parties to calculate a function in collaboration, without the need to share the raw data. This is achieved through one or a combination of homomorphic encryption (encryption that allows for computations to be performed on the encrypted data) and secret sharing (communicating incomplete data). MPC is unique amongst privacy preserving methods for model creation due to the fact that data privacy is mathematically guaranteed up to a limited number of coordinated malicious parties ( parties within the network who attempt to compromise secret information). The most prominent drawbacks to MPC is the communication overhead, which severely limits the number of participants that may be present for a reasonable computation time.</p>
 <figure class="align-default" id="mpc-efro">
-<a class="reference internal image-reference" href="../images/mpc_efro.png"><img alt="../images/mpc_efro.png" src="../images/mpc_efro.png" style="height: 150px;" /></a>
+<a class="reference internal image-reference" href="_images/mpc_efro.png"><img alt="_images/mpc_efro.png" src="_images/mpc_efro.png" style="height: 350px;" /></a>
 <figcaption>
 <p><span class="caption-number">Fig. 3 </span><span class="caption-text">Secure Multiparty Computation.</span><a class="headerlink" href="#mpc-efro" title="Permalink to this image">#</a></p>
 </figcaption>

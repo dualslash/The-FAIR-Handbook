@@ -43,7 +43,7 @@ parts:
         - file: dia3
         - file: dia4
         - file: dia5
-  - caption: Privacy enhancing Techniques
+  - caption: Privacy-enhancing technologies (PET) 
     chapters:
     - file: z3
     - file: pet1

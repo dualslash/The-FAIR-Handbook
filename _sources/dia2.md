@@ -23,4 +23,4 @@ Then steps follow:
   * The data is processed to meet technical specifications or format that is compatible with the system.
 
 * Data Ingestion
-  * Finally data is integrated with the backend systems.
+  * Finally the data is integrated with the backend systems.

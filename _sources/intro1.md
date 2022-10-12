@@ -1,12 +1,15 @@
-# Welcome to the playbook for health data sharing ecosystems 
+# Welcome to the Playbook for Health Data Sharing Ecosystems 
 
 </br>
 
-This playbook is a practical guideline for SMEs wanting to learn more about health data sharing and re-use. 
-The objective of this playbook is to facilitate data sharing and ecosystem creation for use of novel (e)health technology and services as well as to enhance scientific research in health related questions. (e)Health data drawn from health data sources, such as hospitals and personal wearables are arguably one of the most valuable and sensitive types of data. The value of this type of data is the potential to support research and facilitate product development within healthcare, digital health, public health and many others areas. However, this data is highly sensitive since health data reveals information about one’s health conditions, family members, ones psycho-social state and history. This report will help companies steer towards an ecosystem that allows its members to share insights from health data under the appropriate legal, ethical and technical constraints. All these necessary foundational elements making up a health data ecosystem will be touched upon in this book. This playbook is a [dynamic resource that will change over time](https://github.com/dualslash/The-FAIR-Handbook), and will be updated on a regular basis.
+This playbook is a practical guideline for small and medium-sized enterprises (SMEs) wanting to learn more about _health data sharing and re-use_. 
+
+The objective of this playbook is to facilitate data sharing and ecosystem creation, to enable the use of novel (e)health technology and services as well as to enhance scientific research in health related questions. (e)Health data drawn from health data sources, such as hospitals and personal wearables, are arguably one of the most valuable and sensitive types of data. The value of this type of data is the potential to support research and facilitate product development within healthcare, digital health, public health and many others areas. However, this data is highly sensitive since health data reveals information about one’s health conditions, family members, ones psycho-social state and history. 
+
+This report will help companies steer towards an ecosystem that allows its members to share insights from health data under the appropriate legal, ethical and technical constraints. All these necessary foundational elements making up a health data ecosystem will be touched upon in this book. This playbook is a [dynamic resource that will change over time](https://github.com/dualslash/The-FAIR-Handbook), and will be updated on a regular basis. All changes are publicly accessible through the [commit log](https://github.com/dualslash/The-FAIR-Handbook/commits/main/The-FAIR-Handbook), through which references can be made to specific versions of the book.
 
 ## For whom
-The guidelines provided here aim to help those wishing to handle and re-use health data. It consists of information and resources with references to the state-of-the-art in the scientific community as well to practical advice and available solutions to further investigate. This playbook is written for those interested in learning more about the major themes concerning health data sharing and re-usage. 
+The guidelines provided here aim to help those wishing to handle and re-use health data. It consists of information and resources with references to the state-of-the-art in the scientific community, as well to provide practical advice and available solutions to further investigate. This playbook is written for those interested in learning more about the major themes concerning health data sharing and re-usage. 
 
 * For CTOs, data scientists and managers, researchers, software developers and policy makers.  
 * For organizations depending on access health data for their services or products.  
@@ -15,7 +18,7 @@ The guidelines provided here aim to help those wishing to handle and re-use heal
 
 ## How to use
 
-The playbook is developed around four important themes that may be addressed separately  within the playbook. The major building blocks for health data ecosystems are as follows: 
+The playbook is developed around four important themes that may be addressed separately within the playbook. The major building blocks for health data ecosystems are as follows: 
 
 *  Common data sharing methods
 *  Principles of data reuse
@@ -27,10 +30,10 @@ You can navigate this book by using the menu to the right, or by flipping pages 
 :::
 
 ## Value of this playbook
-Data in the digital health space is scarce and hard to come by. 
+Data in the digital health space is scarce and hard to come by. Some data may not even be replicable, such as pandemic data.
 
 Why share health data? Acquiring and storing data can be expensive. Reuse of existing data means a lower operational overhead and a more sustainable data strategy. 
-Principles discussed in this playbook not only will make your data more manageable, but also increase its value by increasing the scope of possible applications, speeding up data exploration and encouraging reuse of other existing data sources. 
+The principles discussed in this playbook not only will make your data more manageable, but also increase its value by increasing the scope of possible applications, speeding up data exploration and encouraging reuse of other existing data sources. 
 
 ## Other sources
 Many other organizations are active in the field of health data reuse and ecosystems. A selection of these is listed here:
@@ -38,7 +41,7 @@ Many other organizations are active in the field of health data reuse and ecosys
 * [Health-RI](https://www.health-ri.nl/)
 * [Personal Health Train](https://www.dtls.nl/fair-data/personal-health-train/)
 * [Elixer](https://elixir-europe.org/)
-* [Go-Fair](https://www.go-fair.org/)
+* [Go-FAIR](https://www.go-fair.org/)
 * [European Health Data Space](https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_en)
 * [Digital Acts EU](https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package)
 * [European Software as a Medical Device regulation](https://health.ec.europa.eu/system/files/2021-03/md_mdcg_2021_mdsw_en_0.pdf)
@@ -58,5 +61,5 @@ Reusing health data is not an easy task. And setting up an ecosystem is not some
 
 `````{admonition} Reach out!
 :class: tip
-If you want to learn more, reach out to robin.vanstokkum@tno.nl or andre.boorsma@tno.nl. 
+If you want to learn more about setting up a data ecosystem or would like to explore a partnership with TNO, reach out to [Robin van Stokkum](robin.vanstokkum@tno.nl) or [Andre Boorsma](andre.boorsma@tno.nl). If you would like to contribute to this knowledge base or would like to develop a knowledge base for your organisation, contact [Ruduan Plug](ruduan.plug@tno.nl). 
 `````

@@ -12,7 +12,7 @@
 
 </br>
 
-The **Data Sharing Architecture** workflow describes the technical level of the querying mechanism of FAIR data from a FDP within an organisation. Any data request always starts with verifying the query format and the credentials of the party requesting the data, which can be seen to the left of the diagram. A wrong query format returns a syntax error, and any query without valid credentials results in a rejection.
+The **Data Sharing Architecture** diagram describes the technical level of the querying mechanism of FAIR data from a FDP within an organisation. Any data request always starts with verifying the query format and the credentials of the party requesting the data, which can be seen to the left of the diagram. A wrong query format returns a syntax error, and any query without valid credentials results in a rejection.
 
 Then we evaluate the query according to the following steps:
 * Query Audit

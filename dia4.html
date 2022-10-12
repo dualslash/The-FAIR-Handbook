@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Data Integration Architecture &#8212; Playbook for health data sharing ecosystems</title>
+    <title>Data Integration Workflow &#8212; Playbook for health data sharing ecosystems</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -303,7 +303,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     Data Integration Architecture
+     Data Integration Workflow
     </a>
    </li>
    <li class="toctree-l2">
@@ -569,7 +569,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Data Integration Architecture</h1>
+                <h1>Data Integration Workflow</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -581,34 +581,35 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="data-integration-architecture">
-<h1>Data Integration Architecture<a class="headerlink" href="#data-integration-architecture" title="Permalink to this headline">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="data-integration-workflow">
+<h1>Data Integration Workflow<a class="headerlink" href="#data-integration-workflow" title="Permalink to this headline">#</a></h1>
 </br>
 <p align = "center">
-<a href=".\_static\img\techdataintegration.png">
-<img src=".\_static\img\techdataintegration.png" width="740" />
+<a href=".\_static\img\dataintegration.png">
+<img src=".\_static\img\dataintegration.png" width="740" />
 </br>
  <small>Click the diagram to see the full size diagram.</small>
 </p>
 </br>
-<p>The <strong>Data Integration</strong> workflow describes the process level of the intake of FAIR data within an organisation. Data may be acquired internally or externally and may come in various formats. The <em>Data Steward</em> is responsible for the policy and semantic-level handling of these data, while the <em>Information Manager</em> is responsible for the secure and proper technical processing of data.</p>
-<p>Then steps follow:</p>
+<p>The <strong>Data Integration Architecture</strong> workflow describes the technical level of the intake of FAIR data within an organisation. Any data ingestion request always starts with verifying the credentials of the party submitting the data, which can be seen to the left of the diagram. Then, we verify whether these data are an existing set of data, or are a new data point entered into the system.</p>
+<p>Then we split the workflow into two branches:</p>
 <ul class="simple">
-<li><p>Validation</p>
+<li><p>Existing Data Set</p>
 <ul>
-<li><p>Verification that the data provider user or group has the right permissions to access the data integration service.</p></li>
-<li><p>Verification that the data adheres to the right structure and meets technical policies.</p></li>
+<li><p>We verify whether the data already adheres to FAIR standards</p></li>
+<li><p>If not, the data needs to go through a FAIRification process</p></li>
+<li><p>We verify whether the data meets any known ontology</p></li>
+<li><p>If not, the data has to be mapped or integrated with an existing ontology</p></li>
+<li><p>Finally, the data can be integrated with the FAIR Data Point (FDP) as a FAIR Data Resource (FDR)</p></li>
 </ul>
 </li>
-<li><p>Data Preperation</p>
+<li><p>New Data Point</p>
 <ul>
-<li><p>The data is evaluated for quality and semantic compability.</p></li>
-<li><p>The data is processed to meet technical specifications or format that is compatible with the system.</p></li>
-</ul>
-</li>
-<li><p>Data Ingestion</p>
-<ul>
-<li><p>Finally the data is integrated with the backend systems.</p></li>
+<li><p>We verify if the new data point matches any given FAIR metadata template or if a template has been supplied.</p></li>
+<li><p>If not, a new template has to be specified otherwise the data cannot be integrated.</p></li>
+<li><p>We check whether the data point is compliant with internal and external policy</p></li>
+<li><p>If not, compliance issues have to be resolved before data can be integrated.</p></li>
+<li><p>Finally, the data can be integrated with the FAIR Data Point (FDP) as a FAIR Data Resource (FDR)</p></li>
 </ul>
 </li>
 </ul>

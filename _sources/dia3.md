@@ -12,7 +12,7 @@
 
 </br>
 
-The **Data Sharing** workflow describes the process through which FAIR data can be shared internally or externally. These requests may have originated from internal or external sources and typically follow a set standard. The _Data Steward_ is responsible for the policy and semantic-level handling of these requests, while the _Information Manager_ is responsible for the secure and proper technical processing of requests. Each request is logged at every step of the process for full provenance on the type of requests that are made and the data that has been made available.
+The **Data Sharing Workflow** diagram describes the process through which FAIR data can be shared internally or externally. These requests may have originated from internal or external sources and typically follow a set standard. The _Data Steward_ is responsible for the policy and semantic-level handling of these requests, while the _Information Manager_ is responsible for the secure and proper technical processing of requests. Each request is logged at every step of the process for full provenance on the type of requests that are made and the data that has been made available.
 
 Then steps follow:
 * Validation

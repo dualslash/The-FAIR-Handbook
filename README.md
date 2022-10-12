@@ -1,6 +1,6 @@
 # The FAIR Handbook
 
-A complete guide to FAIR data and services. 
+A complete knowledge base for health data sharing ecosystems using FAIR data and services.
 
 [Available here](https://dualslash.github.io/The-FAIR-Handbook/), automatically built from this source using [Github workflow](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions).
 
@@ -27,3 +27,12 @@ For GitHub and GitLab deployment specifically, the [cookiecutter-jupyter-book](h
 ## Acknowledgement
 
 This project is created using the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [executablebooks/cookiecutter-jupyter-book template](https://github.com/executablebooks/cookiecutter-jupyter-book).
+
+## Core Contributors
+
+The core contributors of this project include:
+- [Andre Boorsma](https://github.com/aboorsma)
+- [Robin van Stokkum](https://github.com/stokkumrmv)
+- [Elena Lazovik](https://github.com/elenalazovik)
+- [Ruduan Plug](https://github.com/dualslash)
+

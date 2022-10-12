@@ -61,5 +61,8 @@ Reusing health data is not an easy task. And setting up an ecosystem is not some
 
 `````{admonition} Reach out!
 :class: tip
-If you want to learn more about setting up a data ecosystem or would like to explore a partnership with TNO, reach out to [Robin van Stokkum](robin.vanstokkum@tno.nl) or [Andre Boorsma](andre.boorsma@tno.nl). If you would like to contribute to this knowledge base or would like to develop a knowledge base for your organisation, contact [Ruduan Plug](ruduan.plug@tno.nl). 
+If you want to learn more about setting up a data ecosystem or would like to explore a partnership with TNO, reach out to <a href="robin.vanstokkum@tno.nl">Robin van Stokkum</a> or <a href="andre.boorsma@tno.nl">Andre Boorsma</a>. If you would like to contribute to this knowledge base or would like to develop a knowledge base for your organisation, contact <a href="ruduan.plug@tno.nl">Ruduan Plug</a>. 
 `````
+
+
+ 

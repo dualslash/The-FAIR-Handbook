@@ -7,6 +7,7 @@
 <img src=".\_static\img\dataintegration.png" width="740" />
 </br>
  <small>Click the diagram to see the full size diagram.</small>
+</a>
 </p>
 
 </br>

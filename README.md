@@ -36,4 +36,6 @@ The core contributors of this project include:
 - [Elena Lazovik](https://github.com/elenalazovik)
 - [Ruduan Plug](https://github.com/dualslash)
 
-Would you like to contribute? An accessible option is to [open an issue](https://github.com/dualslash/The-FAIR-Handbook/issues) with any question, suggestion or addition. More advanced users can [create a branch](https://github.com/dualslash/The-FAIR-Handbook/branches) and then make a [pull request](https://github.com/dualslash/The-FAIR-Handbook/pulls) to request their contribution to be added to the knowledge base.
+### Would you like to contribute? 
+
+An accessible option is to [open an issue](https://github.com/dualslash/The-FAIR-Handbook/issues) with any question, suggestion or addition. More advanced users can [create a branch](https://github.com/dualslash/The-FAIR-Handbook/branches) and then make a [pull request](https://github.com/dualslash/The-FAIR-Handbook/pulls) to request their contribution to be added to the knowledge base.

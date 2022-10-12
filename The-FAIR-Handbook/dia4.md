@@ -1,26 +1,29 @@
-# Data Integration Architecture
+# Data Integration Workflow
 
 </br>
 
 <p align = "center">
-<a href=".\_static\img\techdataintegration.png">
-<img src=".\_static\img\techdataintegration.png" width="740" />
+<a href=".\_static\img\dataintegration.png">
+<img src=".\_static\img\dataintegration.png" width="740" />
 </br>
  <small>Click the diagram to see the full size diagram.</small>
 </p>
 
 </br>
 
-The **Data Integration** workflow describes the process level of the intake of FAIR data within an organisation. Data may be acquired internally or externally and may come in various formats. The _Data Steward_ is responsible for the policy and semantic-level handling of these data, while the _Information Manager_ is responsible for the secure and proper technical processing of data.
+The **Data Integration Architecture** workflow describes the technical level of the intake of FAIR data within an organisation. Any data ingestion request always starts with verifying the credentials of the party submitting the data, which can be seen to the left of the diagram. Then, we verify whether these data are an existing set of data, or are a new data point entered into the system.
 
-Then steps follow:
-* Validation
-  * Verification that the data provider user or group has the right permissions to access the data integration service. 
-  * Verification that the data adheres to the right structure and meets technical policies.
+Then we split the workflow into two branches:
+* Existing Data Set
+  * We verify whether the data already adheres to FAIR standards
+   * If not, the data needs to go through a FAIRification process
+  * We verify whether the data meets any known ontology
+   * If not, the data has to be mapped or integrated with an existing ontology
+  * Finally, the data can be integrated with the FAIR Data Point (FDP) as a FAIR Data Resource (FDR)   
 
-* Data Preperation
-  * The data is evaluated for quality and semantic compability. 
-  * The data is processed to meet technical specifications or format that is compatible with the system.
-
-* Data Ingestion
-  * Finally the data is integrated with the backend systems.
+* New Data Point
+  * We verify if the new data point matches any given FAIR metadata template or if a template has been supplied.
+   * If not, a new template has to be specified otherwise the data cannot be integrated.
+  * We check whether the data point is compliant with internal and external policy
+   * If not, compliance issues have to be resolved before data can be integrated.
+  * Finally, the data can be integrated with the FAIR Data Point (FDP) as a FAIR Data Resource (FDR)  

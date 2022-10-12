@@ -2,14 +2,14 @@
 
 </br>
 
-Click the diagram to see the full size diagram.
-
 <p align = "center">
 <a href=".\_static\img\dataintegration.png">
 <img src=".\_static\img\dataintegration.png" width="740" />
 </br>
-<small>TNO.</small>
+ <small>Click the diagram to see the full size diagram.</small>
 </p>
+
+</br>
 
 The Data Integration workflow describes the process level of the intake of FAIR data within an organisation. Data may be acquired internally or externally and may come in various formats. The _Data Steward_ is responsible for the policy and semantic-level handling of these data, while the _Information Manager_ is responsible for the secure and proper technical processing of data.
 

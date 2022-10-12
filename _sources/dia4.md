@@ -1,4 +1,4 @@
-# Data Integration Workflow
+# Data Integration Architecture
 
 </br>
 
@@ -12,7 +12,7 @@
 
 </br>
 
-The **Data Integration Architecture** workflow describes the technical level of the intake of FAIR data within an organisation. Any data ingestion request always starts with verifying the credentials of the party submitting the data, which can be seen to the left of the diagram. Then, we verify whether these data are an existing set of data, or are a new data point entered into the system.
+The **Data Integration Architecture** diagram describes the technical level of the intake of FAIR data within an organisation. Any data ingestion request always starts with verifying the credentials of the party submitting the data, which can be seen to the left of the diagram. Then, we verify whether these data are an existing set of data, or are a new data point entered into the system.
 
 Then we split the workflow into two branches:
 * Existing Data Set

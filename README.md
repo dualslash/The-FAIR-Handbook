@@ -26,7 +26,7 @@ For GitHub and GitLab deployment specifically, the [cookiecutter-jupyter-book](h
 
 ## Acknowledgement
 
-This project is created using the excellent open source [Jupyter Book project](https://jupyterbook.org/) and the [Jupyter Book Cookiecutter template](https://github.com/executablebooks/cookiecutter-jupyter-book).
+This project is created using the excellent open source [Jupyter Book Project](https://jupyterbook.org/) and the [Jupyter Book Template](https://github.com/executablebooks/cookiecutter-jupyter-book).
 
 ## Core Contributors
 

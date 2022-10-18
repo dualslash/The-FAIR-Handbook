@@ -1,5 +1,5 @@
-(Model-to-data)=
-# Model-to-data PETs
+# Model-to-Data PETs
+
 Another branch of PETs is directly aimed at creating an infrastructure of actors that aim to utilize the value of the combination of their respective data. In this branch of PETs, the data is not shared into a single large dataset or data lake upon which models can be trained but the models are sent to the data. Two types of these model-to-data PETs will be discussed here: Federated Learning (FL) and Secure Multiparty Computation (MPC). Both are PETs aimed at generating machine learning models. Although some of the architecture of their implementation can be relatively similar, they are distinct, and each has its own strengths and weaknesses that dictate the appropriate application for each. 
 
 ## Federated Learning

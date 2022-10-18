@@ -4,13 +4,13 @@
 format: jb-book
 root: intro1
 parts:
-  - caption: Data Sharing approaches
+  - caption: Data Sharing Approaches
     chapters:
     - file: dss1
     - file: dss2
     - file: dss3
     - file: dss4
-  - caption: FAIR data exchange
+  - caption: FAIR Data Exchange
     chapters:
     - file: IntroFAIR
     - file: findable
@@ -43,7 +43,7 @@ parts:
         - file: dia3
         - file: dia4
         - file: dia5
-  - caption: Privacy-enhancing technologies (PET) 
+  - caption: Privacy-Enhancing Technologies (PET) 
     chapters:
     - file: z3
     - file: pet1

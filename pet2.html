@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Model-to-data PETs" href="pet3.html" />
+    <link rel="next" title="Model-to-Data PETs" href="pet3.html" />
     <link rel="prev" title="Data Minimalization" href="pet1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -337,7 +337,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="pet3.html">
-   Model-to-data PETs
+   Model-to-Data PETs
   </a>
  </li>
  <li class="toctree-l1">
@@ -672,7 +672,7 @@ title="Print to PDF"
 <p>A second type of algorithmic PET is Homomorphic Encryption (HE). General encryption is a proven and successful method to increase the security and privacy protection of a dataset. However, when one needs to decrypt the data to analyze it, the data becomes sensitive once more. HE aims to solve this by enabling computational analysis of encrypted data. It can be typically used when one wants to outsource computational tasks to a third party where the data to be send it sensitive in nature. Under HE, the encrypted data is sent to a third party, which runs a model on the encrypted data. Once the model is finished, the encrypted results are sent back to the original data owner who can decrypt the results with the relevant private key.</p>
 <p>There are two core features of HE. First feature consist of semantic security. An adversary will be unable to distinguish whether a piece of ciphertext is the encrypted version out of a collection of different plaintexts. The second feature is concerned with one-wayness. In the case of an electronic health record, an adversary cannot link a piece of ciphertext to the corresponding plaintext based solely on the public key of a patient held by a data owner (used to link a patient to their health record).
 HE has been demonstrated in health data research to have been a secure option to train deep learning models without having the model owner see the original data or the model parameters. MORE (Matrix Operation for Randomization or Encryption) is an full HE implementation (FHE) that allows a third party to train models on the sensitive data without compromising privacy or utility <a class="footnote-reference brackets" href="#footnote1" id="id1">1</a><a class="footnote-reference brackets" href="#footnote2" id="id2">2</a>.
-The main downside of any full HE scheme is the overhead posed on the system. It requires vast amounts of memory and processing power to enable the training machine learning models. Alternatively, one could alleviate some of the stringent requirements to gain processing speed. However, this results in compromising the privacy of the data. Another downside is the network aspect. FHE is suited for a third party analyzing the data when time is not of the essence (outsourced analytics). However, when an ecosystem is the goal, insight of data and subsequent models need to be transferred over multiple parties. For example, three parties can have data they want to pool and analyze together, while protecting the sensitive nature of their data. FHE is less suited for this type interaction between several parties. Another branch PETs, called secure Multiparty computation (MPC), remedies this by enabling joint computation in an encrypted space, building on the FHE principles. More on MPC can be found under the <a class="reference internal" href="pet3.html#model-to-data"><span class="std std-ref">Model-to-data PETs</span></a> chapter.</p>
+The main downside of any full HE scheme is the overhead posed on the system. It requires vast amounts of memory and processing power to enable the training machine learning models. Alternatively, one could alleviate some of the stringent requirements to gain processing speed. However, this results in compromising the privacy of the data. Another downside is the network aspect. FHE is suited for a third party analyzing the data when time is not of the essence (outsourced analytics). However, when an ecosystem is the goal, insight of data and subsequent models need to be transferred over multiple parties. For example, three parties can have data they want to pool and analyze together, while protecting the sensitive nature of their data. FHE is less suited for this type interaction between several parties. Another branch PETs, called secure Multiparty computation (MPC), remedies this by enabling joint computation in an encrypted space, building on the FHE principles. More on MPC can be found under the <span class="xref myst">Model-to-data PETs</span> chapter.</p>
 <div class="tip admonition">
 <p class="admonition-title">Implementations</p>
 <p>For a Python library with HE implementations, both simple math operations and machine learning applications, see <a class="reference external" href="https://github.com/ibarrond/Pyfhel">Pyfhel</a>.</p>
@@ -746,7 +746,7 @@ ZKP are a relatively young branch of PETs but already demonstrates promising res
     <a class='right-next' id="next-link" href="pet3.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Model-to-data PETs</p>
+        <p class="prev-next-title">Model-to-Data PETs</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

@@ -1,4 +1,4 @@
-# FAIR data
+# FAIR Data
 
 </br>
 

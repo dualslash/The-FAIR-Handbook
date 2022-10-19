@@ -6,6 +6,14 @@ A FAIR Data point consists of many different elements, which in essence are a la
 
 </br>
 
+<p align = "center">
+<img src=".\_static\img\fdp_blocks_diagram.png" height="474" />
+</br>
+<small>TNO.</small>
+</p>
+
+</br>
+
 The **first component**, and most important one, is a definition of the FAIR Data Point “API” specification. It is completely based on semantic metadata standards (mostly Data Catalog (DCAT) and Dublin Core, combined with the Linked Data Platform (LDP)), and based on the REST (Representational state transfer protocol) philosophy. 
 
 This combination targets the the highest possible technical interoperability in combination with a relatively simple implementation. The FAIR data point protocol comes with a tool that can be used to test the compliance of an implementation. 

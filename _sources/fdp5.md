@@ -4,7 +4,7 @@
 
 Most metadata in datasets are added using ontologies. **Ontologies** contain formal specifications of terms and relationships between them. You can think of them as dictionaries, where every word in the dictionary (a concept) has a unique identifier (concept ID) and is described by other words from that dictionary (definitions and relationships). 
 
-Since all concepts in the ontology are unique and defined by their relations with other concepts, they give a good explanation of what the concept means and how it is related to other concepts. There are many different ontologies being created for different types of data. We will describe here the most popular and widely used ontologies in the world: SNOWMED and FHIR. 
+Since all concepts in the ontology are unique and defined by their relations with other concepts, they give a good explanation of what the concept means and how it is related to other concepts. There are many different ontologies being created for different types of data. The most relevant and widely used ontologies in the medical domain are SNOMED and FHIR, which we describe below, but many more exist. The type of ontology to apply depends on the specific use-case. 
 
 </br>
 

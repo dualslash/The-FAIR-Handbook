@@ -1,8 +1,8 @@
-# FAIR Data Point
+# FAIR Data Points
 
 </br>
 
-FAIR Data Point (sometimes abbreviated to FDP) is the cumulation of the vision of Tim Berners-Lee, the inventor of the world-wide-web, and the vision of the authors of the  [original paper on FAIR](https://doi.org/10.1038/sdata.2016.18) . This describes an atomic unit, much like a server that exists on the web, which has an additional semantic layer that allows it to present and process data in a machine actionable and ultimately FAIR way.
+The FAIR Data Point (sometimes abbreviated to FDP) is the cumulation of the vision of Tim Berners-Lee, the inventor of the world-wide-web, and the vision of the authors of the  [original paper on FAIR](https://doi.org/10.1038/sdata.2016.18) . This describes an atomic unit, much like a server that exists on the web, which has an additional semantic layer that allows it to present and process data in a machine actionable and ultimately FAIR way.
 
 <p align = "center">
 <img src=".\_static\img\fdparchitecture.jpg" height="308" />

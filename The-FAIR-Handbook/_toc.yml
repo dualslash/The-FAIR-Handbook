@@ -32,7 +32,8 @@ parts:
       sections:
         - file: r1
     - file: fdp1
-    - file: fdp2
+      sections:
+        - file: fdp2
     - file: fdp3
       sections:
         - file: fdp4

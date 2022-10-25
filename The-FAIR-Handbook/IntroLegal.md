@@ -1,4 +1,4 @@
-#  Overview of Legislation for Data Sharing
+#  Introduction to the Legislation for Data Sharing
 
 </br>
 A variety of legal instruments are in place presenting legal conditions that need to be met when processing health data. The General Data Protection Regulation, which entered into force 26 May 2018, offers a specific set of requirements that need to be met when processing personal health data. For the Netherlands, the Uitvoeringswet AVG (UAVG) presents the Dutch implementation of the GDPR, among others detailing issues the GDPR leaves open to Member States. In combination with already existing and recently updated other laws, such as the Wet Geneeskundige Behandelingsovereenkomst (WGBO) and the Wet Medisch-wetenschappelijk Onderzoek met mensen (WMO), a framework of legal conditions can be constructed that should be kept in mind when processing personal health data. GDPR and other acts determine the technical and organisational measures that should be met when processing personal data, leading to concepts such as data processing by design and by default. For scientific research, specific obligations are in place, and specific derogations are offered as well. 

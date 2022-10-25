@@ -18,6 +18,10 @@ The guidelines provided here aim to help those wishing to handle and re-use heal
 
 ## How to use
 
+This playbook can be traversed using the navigation bar to the left, where the individual chapters and sections are linked. Any page can be freely bookmarked and will return you to the page you were. In addition, at the bottom of the page you can switch to the previous or next page. Finally, there is a search bar available that can be used to search for specific terms across all pages. 
+
+## Content
+
 The playbook is developed around four important themes that may be addressed separately within the playbook. The major building blocks for health data ecosystems are as follows: 
 
 *  Common data sharing methods
@@ -30,10 +34,11 @@ You can navigate this book by using the menu to the right, or by flipping pages 
 :::
 
 ## Value of this playbook
-Data in the digital health space is scarce and hard to come by. Some data may not even be replicable, such as pandemic data.
+Data in the digital health space is scarce and hard to come by. Some data may not even be replicable, such as pandemic data. Sharing data in a secure and privacy-preserving way is challenging and this playbook will guide you through this topic. 
 
-Why share health data? Acquiring and storing data can be expensive. Reuse of existing data means a lower operational overhead and a more sustainable data strategy. 
-The principles discussed in this playbook not only will make your data more manageable, but also increase its value by increasing the scope of possible applications, speeding up data exploration and encouraging reuse of other existing data sources. 
+Why share health data or models? Acquiring and storing data can be expensive, building models can be time consuming or dependent on external sources. Reuse and sharing of existing data means a lower operational overhead and a more sustainable data strategy. 
+
+The principles discussed in this playbook not only will make your data and models more manageable, but also increase its value by increasing the scope of possible applications, speeding up data exploration and encouraging reuse of other existing data sources. 
 
 ## Other sources
 Many other organizations are active in the field of health data reuse and ecosystems. A selection of these is listed here:

@@ -5,4 +5,12 @@ A variety of legal instruments are in place presenting legal conditions that nee
 <br>
 <br>
 In this document the GDPR and its Dutch implementation, the UAVG, are presented with respect to basic requirements concerning the processing of – sensitive – personal health data, followed by a brief overview of a number of relevant European and Dutch laws dealing with health data. Then, the main requirements and derogations that are in place for scientific research are presented, again focusing on the processing of – usually sensitive – health data. This report supports the creation of a privacy-respecting ecosystems in which personal health data can be processed in a trustworthy, safe and accountable manner. 
+<br>
+<br>
+The legal domain is constantly evolving and compliance towards data legislations can be a challenging topic, which requires constant active effort. Having a dynamic data ecosystem that already takes privacy and legislation into account can significantly ease legal compliance. Three recent regulations that have been introduced are:
+<br>
+<br>
 
+- [EU Data Act](https://digital-strategy.ec.europa.eu/en/policies/data-act)
+- [EU AI Act](https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence)
+- [EU Digital Markets Act](https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/digital-markets-act-ensuring-fair-and-open-digital-markets_en)

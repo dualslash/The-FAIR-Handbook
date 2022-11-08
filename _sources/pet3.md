@@ -51,6 +51,7 @@ A major drawback of MPC is the high communication overhead in respect with the t
 ```{admonition} Implementations
 :class: tip
 Open source implementations are developed by TNO together with academic institutes in collaboration with business and SMEs. Results can be found on [Github](https://github.com/TNO-MPC/) and [PyPI](https://pypi.org/search/?q=%22tno.mpc%22).
+When to use MPC [MPC guide](https://decisiontree.mpc.tno.nl/)
 Commercial implementations of this exist, such as [LinkSight](https://www.linksight.nl/) (a TNO spinout) and [Roseman labs](https://rosemanlabs.com/?gclid=CjwKCAjw4c-ZBhAEEiwAZ105RTL9QuQQ8lfDwjnfJnah5LVFwkSv_bkpbeqPFrNKnMl04rGE_JL9WRoCd8EQAvD_BwE) in the Netherlands. 
 ```
 ## Concluding remarks
